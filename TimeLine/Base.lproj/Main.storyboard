@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g2I-gC-ihO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z07-5N-vik">
+            <objects>
+                <tabBarController id="g2I-gC-ihO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JWp-d8-fNN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wNA-aC-ffH" kind="relationship" relationship="viewControllers" id="3zY-15-YOA"/>
+                        <segue destination="1xS-MN-aig" kind="relationship" relationship="viewControllers" id="R57-jc-W7M"/>
+                        <segue destination="4al-KJ-Klw" kind="relationship" relationship="viewControllers" id="hVh-9i-ckt"/>
+                        <segue destination="V3X-wk-CLo" kind="relationship" relationship="viewControllers" id="FjC-ph-1Jh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3Z-xK-1w1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1077" y="-306"/>
+        </scene>
+        <!--MentionMe-->
+        <scene sceneID="gA6-wv-XTS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MentionMe" id="1xS-MN-aig" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="提到我的" id="dCe-xg-PAF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKY-la-I7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284" y="165"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="pSS-Li-VPs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Me" id="V3X-wk-CLo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" id="rFV-qw-BLp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LX-FP-Uf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766.5" y="154"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="LI8-ou-GNv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Message" id="4al-KJ-Klw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="私信" id="GsB-po-ljW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPl-YC-EyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-939" y="165"/>
+        </scene>
+        <!--TimeLine-->
+        <scene sceneID="fxK-CY-DNG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimeLine" id="wNA-aC-ffH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="时间线" id="aHa-rB-iTz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPG-0G-mtg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1427" y="165"/>
+        </scene>
+    </scenes>
+</document>
