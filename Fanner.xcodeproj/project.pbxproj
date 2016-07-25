@@ -7,45 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050A17771D45D99F00A3BFDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 050A17761D45D99F00A3BFDF /* main.m */; };
-		050A177A1D45D99F00A3BFDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 050A17791D45D99F00A3BFDF /* AppDelegate.m */; };
-		050A177D1D45D99F00A3BFDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050A177C1D45D99F00A3BFDF /* ViewController.m */; };
-		050A17801D45D99F00A3BFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050A177E1D45D99F00A3BFDF /* Main.storyboard */; };
-		050A17821D45D99F00A3BFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050A17811D45D99F00A3BFDF /* Assets.xcassets */; };
-		050A17851D45D99F00A3BFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050A17831D45D99F00A3BFDF /* LaunchScreen.storyboard */; };
-		050A178E1D45E22E00A3BFDF /* MentionMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050A178D1D45E22E00A3BFDF /* MentionMe.storyboard */; };
-		050A17901D45E2EE00A3BFDF /* TimeLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050A178F1D45E2EE00A3BFDF /* TimeLine.storyboard */; };
-		050A17921D45E48A00A3BFDF /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050A17911D45E48A00A3BFDF /* Message.storyboard */; };
-		050A17981D45E5C300A3BFDF /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050A17971D45E5C300A3BFDF /* Me.storyboard */; };
-		05F3F65F1D45E7C40041BA25 /* Spliash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F65E1D45E7C40041BA25 /* Spliash.storyboard */; };
-		05F3F6611D45E9480041BA25 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6601D45E9480041BA25 /* Login.storyboard */; };
-		05F3F6631D45EB1E0041BA25 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6621D45EB1E0041BA25 /* Account.storyboard */; };
-		05F3F66A1D45F2250041BA25 /* SpliashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6691D45F2250041BA25 /* SpliashViewController.m */; };
-		05F3F66E1D45FA050041BA25 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F66D1D45FA050041BA25 /* LoginViewController.m */; };
+		052952011D46038700110C7B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 052952001D46038700110C7B /* Podfile */; };
+		05CCDCCC1D4604BB00C8578B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05CCDCCB1D4604BB00C8578B /* Info.plist */; };
+		05F3F6861D4602710041BA25 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6701D4602710041BA25 /* Account.storyboard */; };
+		05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6721D4602710041BA25 /* AppDelegate.m */; };
+		05F3F6881D4602710041BA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6731D4602710041BA25 /* Assets.xcassets */; };
+		05F3F6891D4602710041BA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6741D4602710041BA25 /* LaunchScreen.storyboard */; };
+		05F3F68A1D4602710041BA25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6761D4602710041BA25 /* Main.storyboard */; };
+		05F3F68C1D4602710041BA25 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6791D4602710041BA25 /* Login.storyboard */; };
+		05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F67B1D4602710041BA25 /* LoginViewController.m */; };
+		05F3F68E1D4602710041BA25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F67C1D4602710041BA25 /* main.m */; };
+		05F3F68F1D4602710041BA25 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F67D1D4602710041BA25 /* Me.storyboard */; };
+		05F3F6901D4602710041BA25 /* MentionMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F67E1D4602710041BA25 /* MentionMe.storyboard */; };
+		05F3F6911D4602710041BA25 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F67F1D4602710041BA25 /* Message.storyboard */; };
+		05F3F6921D4602710041BA25 /* Spliash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6801D4602710041BA25 /* Spliash.storyboard */; };
+		05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6821D4602710041BA25 /* SpliashViewController.m */; };
+		05F3F6941D4602710041BA25 /* TimeLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6831D4602710041BA25 /* TimeLine.storyboard */; };
+		05F3F6951D4602710041BA25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6851D4602710041BA25 /* ViewController.m */; };
+		5B185E0CC293F9F6F3D2DF27 /* libPods-Fanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03062B0BFEB36FD9D343725 /* libPods-Fanner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		050A17721D45D99F00A3BFDF /* Fanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		050A17761D45D99F00A3BFDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		050A17781D45D99F00A3BFDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		050A17791D45D99F00A3BFDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		050A177B1D45D99F00A3BFDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		050A177C1D45D99F00A3BFDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		050A177F1D45D99F00A3BFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		050A17811D45D99F00A3BFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		050A17841D45D99F00A3BFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		050A17861D45D99F00A3BFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		050A178D1D45E22E00A3BFDF /* MentionMe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MentionMe.storyboard; sourceTree = "<group>"; };
-		050A178F1D45E2EE00A3BFDF /* TimeLine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeLine.storyboard; sourceTree = "<group>"; };
-		050A17911D45E48A00A3BFDF /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
-		050A17971D45E5C300A3BFDF /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
-		05F3F65E1D45E7C40041BA25 /* Spliash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spliash.storyboard; sourceTree = "<group>"; };
-		05F3F6601D45E9480041BA25 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		05F3F6621D45EB1E0041BA25 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		05F3F6681D45F2250041BA25 /* SpliashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpliashViewController.h; sourceTree = "<group>"; };
-		05F3F6691D45F2250041BA25 /* SpliashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpliashViewController.m; sourceTree = "<group>"; };
-		05F3F66C1D45FA050041BA25 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		05F3F66D1D45FA050041BA25 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		052952001D46038700110C7B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		05CCDCCB1D4604BB00C8578B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F3F6701D4602710041BA25 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		05F3F6711D4602710041BA25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05F3F6721D4602710041BA25 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05F3F6731D4602710041BA25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05F3F6751D4602710041BA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05F3F6771D4602710041BA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05F3F6791D4602710041BA25 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		05F3F67A1D4602710041BA25 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		05F3F67B1D4602710041BA25 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		05F3F67C1D4602710041BA25 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05F3F67D1D4602710041BA25 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		05F3F67E1D4602710041BA25 /* MentionMe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MentionMe.storyboard; sourceTree = "<group>"; };
+		05F3F67F1D4602710041BA25 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		05F3F6801D4602710041BA25 /* Spliash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spliash.storyboard; sourceTree = "<group>"; };
+		05F3F6811D4602710041BA25 /* SpliashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpliashViewController.h; sourceTree = "<group>"; };
+		05F3F6821D4602710041BA25 /* SpliashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpliashViewController.m; sourceTree = "<group>"; };
+		05F3F6831D4602710041BA25 /* TimeLine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeLine.storyboard; sourceTree = "<group>"; };
+		05F3F6841D4602710041BA25 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		05F3F6851D4602710041BA25 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		579B2DEEEFDCF8B8FB60E305 /* Pods-Fanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fanner/Pods-Fanner.debug.xcconfig"; sourceTree = "<group>"; };
+		61E49DA329B52DBA7A0D09FF /* Pods-Fanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fanner/Pods-Fanner.release.xcconfig"; sourceTree = "<group>"; };
+		C03062B0BFEB36FD9D343725 /* libPods-Fanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B185E0CC293F9F6F3D2DF27 /* libPods-Fanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +70,11 @@
 		050A17691D45D99F00A3BFDF = {
 			isa = PBXGroup;
 			children = (
-				050A17741D45D99F00A3BFDF /* Classes */,
+				052952001D46038700110C7B /* Podfile */,
+				05F3F66F1D4602710041BA25 /* Classes */,
 				050A17731D45D99F00A3BFDF /* Products */,
+				455605033DEB731CE5FC6F54 /* Pods */,
+				D98D65A9986CE944BED435BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,64 +86,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		050A17741D45D99F00A3BFDF /* Classes */ = {
+		05F3F66F1D4602710041BA25 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				050A17781D45D99F00A3BFDF /* AppDelegate.h */,
-				050A17791D45D99F00A3BFDF /* AppDelegate.m */,
-				050A177B1D45D99F00A3BFDF /* ViewController.h */,
-				050A177C1D45D99F00A3BFDF /* ViewController.m */,
-				05F3F66B1D45F22B0041BA25 /* Spliash */,
-				050A178C1D45E1C500A3BFDF /* Main */,
-				050A17811D45D99F00A3BFDF /* Assets.xcassets */,
-				050A17831D45D99F00A3BFDF /* LaunchScreen.storyboard */,
-				050A17861D45D99F00A3BFDF /* Info.plist */,
-				050A17751D45D99F00A3BFDF /* Supporting Files */,
+				05F3F6701D4602710041BA25 /* Account.storyboard */,
+				05F3F6711D4602710041BA25 /* AppDelegate.h */,
+				05F3F6721D4602710041BA25 /* AppDelegate.m */,
+				05CCDCCB1D4604BB00C8578B /* Info.plist */,
+				05F3F6731D4602710041BA25 /* Assets.xcassets */,
+				05F3F6741D4602710041BA25 /* LaunchScreen.storyboard */,
+				05F3F6761D4602710041BA25 /* Main.storyboard */,
+				05F3F6791D4602710041BA25 /* Login.storyboard */,
+				05F3F67A1D4602710041BA25 /* LoginViewController.h */,
+				05F3F67B1D4602710041BA25 /* LoginViewController.m */,
+				05F3F67C1D4602710041BA25 /* main.m */,
+				05F3F67D1D4602710041BA25 /* Me.storyboard */,
+				05F3F67E1D4602710041BA25 /* MentionMe.storyboard */,
+				05F3F67F1D4602710041BA25 /* Message.storyboard */,
+				05F3F6801D4602710041BA25 /* Spliash.storyboard */,
+				05F3F6811D4602710041BA25 /* SpliashViewController.h */,
+				05F3F6821D4602710041BA25 /* SpliashViewController.m */,
+				05F3F6831D4602710041BA25 /* TimeLine.storyboard */,
+				05F3F6841D4602710041BA25 /* ViewController.h */,
+				05F3F6851D4602710041BA25 /* ViewController.m */,
 			);
-			name = Classes;
-			path = TimeLine;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		050A17751D45D99F00A3BFDF /* Supporting Files */ = {
+		455605033DEB731CE5FC6F54 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				050A17761D45D99F00A3BFDF /* main.m */,
+				579B2DEEEFDCF8B8FB60E305 /* Pods-Fanner.debug.xcconfig */,
+				61E49DA329B52DBA7A0D09FF /* Pods-Fanner.release.xcconfig */,
 			);
-			name = "Supporting Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		050A178C1D45E1C500A3BFDF /* Main */ = {
+		D98D65A9986CE944BED435BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				050A177E1D45D99F00A3BFDF /* Main.storyboard */,
-				050A178D1D45E22E00A3BFDF /* MentionMe.storyboard */,
-				050A178F1D45E2EE00A3BFDF /* TimeLine.storyboard */,
-				050A17911D45E48A00A3BFDF /* Message.storyboard */,
-				050A17971D45E5C300A3BFDF /* Me.storyboard */,
-				05F3F65E1D45E7C40041BA25 /* Spliash.storyboard */,
-				05F3F6641D45EB700041BA25 /* Login */,
+				C03062B0BFEB36FD9D343725 /* libPods-Fanner.a */,
 			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		05F3F6641D45EB700041BA25 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				05F3F6601D45E9480041BA25 /* Login.storyboard */,
-				05F3F6621D45EB1E0041BA25 /* Account.storyboard */,
-				05F3F66C1D45FA050041BA25 /* LoginViewController.h */,
-				05F3F66D1D45FA050041BA25 /* LoginViewController.m */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		05F3F66B1D45F22B0041BA25 /* Spliash */ = {
-			isa = PBXGroup;
-			children = (
-				05F3F6681D45F2250041BA25 /* SpliashViewController.h */,
-				05F3F6691D45F2250041BA25 /* SpliashViewController.m */,
-			);
-			name = Spliash;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 050A17891D45D99F00A3BFDF /* Build configuration list for PBXNativeTarget "Fanner" */;
 			buildPhases = (
+				A346D77A010F553040AED06C /* [CP] Check Pods Manifest.lock */,
 				050A176E1D45D99F00A3BFDF /* Sources */,
 				050A176F1D45D99F00A3BFDF /* Frameworks */,
 				050A17701D45D99F00A3BFDF /* Resources */,
+				245950B4C1FB73C2221B356F /* [CP] Embed Pods Frameworks */,
+				419B25DAF8CEAC0A6502F79F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,51 +190,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050A17851D45D99F00A3BFDF /* LaunchScreen.storyboard in Resources */,
-				050A17901D45E2EE00A3BFDF /* TimeLine.storyboard in Resources */,
-				05F3F6631D45EB1E0041BA25 /* Account.storyboard in Resources */,
-				050A17821D45D99F00A3BFDF /* Assets.xcassets in Resources */,
-				050A17801D45D99F00A3BFDF /* Main.storyboard in Resources */,
-				050A17921D45E48A00A3BFDF /* Message.storyboard in Resources */,
-				05F3F65F1D45E7C40041BA25 /* Spliash.storyboard in Resources */,
-				050A17981D45E5C300A3BFDF /* Me.storyboard in Resources */,
-				050A178E1D45E22E00A3BFDF /* MentionMe.storyboard in Resources */,
-				05F3F6611D45E9480041BA25 /* Login.storyboard in Resources */,
+				05F3F6891D4602710041BA25 /* LaunchScreen.storyboard in Resources */,
+				05F3F6921D4602710041BA25 /* Spliash.storyboard in Resources */,
+				05F3F6881D4602710041BA25 /* Assets.xcassets in Resources */,
+				05F3F68C1D4602710041BA25 /* Login.storyboard in Resources */,
+				05F3F6861D4602710041BA25 /* Account.storyboard in Resources */,
+				05F3F6911D4602710041BA25 /* Message.storyboard in Resources */,
+				052952011D46038700110C7B /* Podfile in Resources */,
+				05F3F68F1D4602710041BA25 /* Me.storyboard in Resources */,
+				05CCDCCC1D4604BB00C8578B /* Info.plist in Resources */,
+				05F3F68A1D4602710041BA25 /* Main.storyboard in Resources */,
+				05F3F6901D4602710041BA25 /* MentionMe.storyboard in Resources */,
+				05F3F6941D4602710041BA25 /* TimeLine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245950B4C1FB73C2221B356F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fanner/Pods-Fanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		419B25DAF8CEAC0A6502F79F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fanner/Pods-Fanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A346D77A010F553040AED06C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		050A176E1D45D99F00A3BFDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050A177D1D45D99F00A3BFDF /* ViewController.m in Sources */,
-				05F3F66A1D45F2250041BA25 /* SpliashViewController.m in Sources */,
-				050A177A1D45D99F00A3BFDF /* AppDelegate.m in Sources */,
-				050A17771D45D99F00A3BFDF /* main.m in Sources */,
-				05F3F66E1D45FA050041BA25 /* LoginViewController.m in Sources */,
+				05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */,
+				05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */,
+				05F3F68E1D4602710041BA25 /* main.m in Sources */,
+				05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */,
+				05F3F6951D4602710041BA25 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		050A177E1D45D99F00A3BFDF /* Main.storyboard */ = {
+		05F3F6741D4602710041BA25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				050A177F1D45D99F00A3BFDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		050A17831D45D99F00A3BFDF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				050A17841D45D99F00A3BFDF /* Base */,
+				05F3F6751D4602710041BA25 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		05F3F6761D4602710041BA25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05F3F6771D4602710041BA25 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,22 +374,24 @@
 		};
 		050A178A1D45D99F00A3BFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 579B2DEEEFDCF8B8FB60E305 /* Pods-Fanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TimeLine/Info.plist;
+				INFOPLIST_FILE = Fanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.universal.zm.TimeLine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.universal.zm.Fanner;
 				PRODUCT_NAME = Fanner;
 			};
 			name = Debug;
 		};
 		050A178B1D45D99F00A3BFDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E49DA329B52DBA7A0D09FF /* Pods-Fanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TimeLine/Info.plist;
+				INFOPLIST_FILE = Fanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.universal.zm.TimeLine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.universal.zm.Fanner;
 				PRODUCT_NAME = Fanner;
 			};
 			name = Release;
