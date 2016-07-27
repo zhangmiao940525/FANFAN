@@ -15,6 +15,9 @@
 		0542752A1D47559C00115E25 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 054275271D47559C00115E25 /* User+CoreDataProperties.m */; };
 		0542752B1D47559C00115E25 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 054275291D47559C00115E25 /* User.m */; };
 		0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542752E1D4755FA00115E25 /* CoreDataStack+User.m */; };
+		0549D30E1D487AC900E9F379 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D30D1D487AC900E9F379 /* Service.m */; };
+		0549D3111D487E0600E9F379 /* APIContant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D3101D487E0600E9F379 /* APIContant.m */; };
+		0549D3141D489EAD00E9F379 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */; };
 		05F3F6861D4602710041BA25 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6701D4602710041BA25 /* Account.storyboard */; };
 		05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6721D4602710041BA25 /* AppDelegate.m */; };
 		05F3F6881D4602710041BA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6731D4602710041BA25 /* Assets.xcassets */; };
@@ -49,6 +52,12 @@
 		054275291D47559C00115E25 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		0542752D1D4755FA00115E25 /* CoreDataStack+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreDataStack+User.h"; sourceTree = "<group>"; };
 		0542752E1D4755FA00115E25 /* CoreDataStack+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataStack+User.m"; sourceTree = "<group>"; };
+		0549D30C1D487AC900E9F379 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		0549D30D1D487AC900E9F379 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		0549D30F1D487E0600E9F379 /* APIContant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIContant.h; sourceTree = "<group>"; };
+		0549D3101D487E0600E9F379 /* APIContant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIContant.m; sourceTree = "<group>"; };
+		0549D3121D489EAD00E9F379 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		05CCDCCB1D4604BB00C8578B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F3F6701D4602710041BA25 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		05F3F6711D4602710041BA25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +138,7 @@
 				054275231D4748E000115E25 /* Model.xcdatamodeld */,
 				0542752D1D4755FA00115E25 /* CoreDataStack+User.h */,
 				0542752E1D4755FA00115E25 /* CoreDataStack+User.m */,
+				0549D3151D489EB100E9F379 /* GenericTVController */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -144,9 +154,30 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		0549D30B1D487AB500E9F379 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0549D30C1D487AC900E9F379 /* Service.h */,
+				0549D30D1D487AC900E9F379 /* Service.m */,
+				0549D30F1D487E0600E9F379 /* APIContant.h */,
+				0549D3101D487E0600E9F379 /* APIContant.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		0549D3151D489EB100E9F379 /* GenericTVController */ = {
+			isa = PBXGroup;
+			children = (
+				0549D3121D489EAD00E9F379 /* CoreDataTableViewController.h */,
+				0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */,
+			);
+			name = GenericTVController;
+			sourceTree = "<group>";
+		};
 		05F3F66F1D4602710041BA25 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0549D30B1D487AB500E9F379 /* Service */,
 				0542751F1D47452100115E25 /* CoreData */,
 				0542751B1D473D1500115E25 /* Login */,
 				05F3F6711D4602710041BA25 /* AppDelegate.h */,
@@ -318,6 +349,7 @@
 				0542752A1D47559C00115E25 /* User+CoreDataProperties.m in Sources */,
 				05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */,
 				0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */,
+				0549D30E1D487AC900E9F379 /* Service.m in Sources */,
 				05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */,
 				0542751A1D473D0700115E25 /* UserTableViewCell.m in Sources */,
 				054275221D47454300115E25 /* CoreDataStack.m in Sources */,
@@ -326,7 +358,9 @@
 				054275251D4748E000115E25 /* Model.xcdatamodeld in Sources */,
 				05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */,
 				0542751E1D47438B00115E25 /* AccountTableViewController.m in Sources */,
+				0549D3111D487E0600E9F379 /* APIContant.m in Sources */,
 				05F3F6951D4602710041BA25 /* ViewController.m in Sources */,
+				0549D3141D489EAD00E9F379 /* CoreDataTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

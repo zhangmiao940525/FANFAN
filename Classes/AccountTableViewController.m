@@ -7,6 +7,7 @@
 //
 
 #import "AccountTableViewController.h"
+#import "CoreDataStack+User.h"
 
 @interface AccountTableViewController ()
 
@@ -14,24 +15,20 @@
 
 @implementation AccountTableViewController
 
+- (void)configureFetch
+{
+    NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:@"User"];
+    self.frc = [[NSFetchedResultsController alloc] initWithFetchRequest:fr managedObjectContext:[CoreDataStack sharedCoreDataStack].context sectionNameKeyPath:nil cacheName:nil];
+    self.frc.delegate = self;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //
+    [self configureFetch];
+    //
+    [self performFetch];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

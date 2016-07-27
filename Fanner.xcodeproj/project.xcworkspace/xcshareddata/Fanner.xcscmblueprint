@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B5A1A74D4E58A2F8F43862B3CAB7A8938CFE2A60",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A116871C543085507D7BCA437771804630053C99" : 0,
+    "B5A1A74D4E58A2F8F43862B3CAB7A8938CFE2A60" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "70F10B01-CFD7-4E72-A651-47D1D6D1CD01",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A116871C543085507D7BCA437771804630053C99" : "",
+    "B5A1A74D4E58A2F8F43862B3CAB7A8938CFE2A60" : "Fanner\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Fanner",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Fanner.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Jaykong\/20160415ZM.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A116871C543085507D7BCA437771804630053C99"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhangmiao940525\/FANFAN",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5A1A74D4E58A2F8F43862B3CAB7A8938CFE2A60"
+    }
+  ]
+}
