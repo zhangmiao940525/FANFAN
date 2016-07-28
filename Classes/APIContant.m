@@ -17,6 +17,8 @@ NSString *const API_OAUTH_CONSUMERSECRET = @"00605147d689f3804314568b10d329d6";
 //
 NSString *const FANFOU_API_HOST = @"api.fanfou.com";
 //
-NSString *const API_VERIFY_CREDENTIAL = @"/account/verify_credentials";
+NSString *const API_VERIFY_CREDENTIAL = @"/account/verify_credentials.json";
 
 NSString *const FANFOU_BASE_HOST = @"fanfou.com";
+//
+NSString *const API_HOME_TIMELINE = @"/statuses/home_timeline.json";

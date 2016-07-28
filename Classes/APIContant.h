@@ -20,3 +20,5 @@ extern NSString *const FANFOU_API_HOST;
 extern NSString *const FANFOU_BASE_HOST;
 
 extern NSString *const API_VERIFY_CREDENTIAL;
+
+extern NSString *const API_HOME_TIMELINE;

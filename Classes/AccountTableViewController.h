@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CoreDataTableViewController.h"
 
-@interface AccountTableViewController :CoreDataTableViewController
+@interface AccountTableViewController :CoreDataTableViewController<NSFetchedResultsControllerDelegate>
 
 
 

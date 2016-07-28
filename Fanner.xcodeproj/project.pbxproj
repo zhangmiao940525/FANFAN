@@ -12,12 +12,16 @@
 		0542751E1D47438B00115E25 /* AccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542751D1D47438B00115E25 /* AccountTableViewController.m */; };
 		054275221D47454300115E25 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 054275211D47454300115E25 /* CoreDataStack.m */; };
 		054275251D4748E000115E25 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 054275231D4748E000115E25 /* Model.xcdatamodeld */; };
-		0542752A1D47559C00115E25 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 054275271D47559C00115E25 /* User+CoreDataProperties.m */; };
-		0542752B1D47559C00115E25 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 054275291D47559C00115E25 /* User.m */; };
 		0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542752E1D4755FA00115E25 /* CoreDataStack+User.m */; };
 		0549D30E1D487AC900E9F379 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D30D1D487AC900E9F379 /* Service.m */; };
 		0549D3111D487E0600E9F379 /* APIContant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D3101D487E0600E9F379 /* APIContant.m */; };
 		0549D3141D489EAD00E9F379 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */; };
+		059D027C1D49D89200826602 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02791D49D89200826602 /* User+CoreDataProperties.m */; };
+		059D027D1D49D89200826602 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D027B1D49D89200826602 /* User.m */; };
+		059D02821D49ED6900826602 /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02801D49ED6900826602 /* TimeLineCell.m */; };
+		059D02831D49ED6900826602 /* TimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059D02811D49ED6900826602 /* TimeLineCell.xib */; };
+		059D02881D49F7AC00826602 /* Status+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02851D49F7AC00826602 /* Status+CoreDataProperties.m */; };
+		059D02891D49F7AC00826602 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02871D49F7AC00826602 /* Status.m */; };
 		05F3F6861D4602710041BA25 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6701D4602710041BA25 /* Account.storyboard */; };
 		05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6721D4602710041BA25 /* AppDelegate.m */; };
 		05F3F6881D4602710041BA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6731D4602710041BA25 /* Assets.xcassets */; };
@@ -46,10 +50,6 @@
 		054275201D47454300115E25 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		054275211D47454300115E25 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		054275241D4748E000115E25 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		054275261D47559C00115E25 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
-		054275271D47559C00115E25 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
-		054275281D47559C00115E25 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		054275291D47559C00115E25 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		0542752D1D4755FA00115E25 /* CoreDataStack+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreDataStack+User.h"; sourceTree = "<group>"; };
 		0542752E1D4755FA00115E25 /* CoreDataStack+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataStack+User.m"; sourceTree = "<group>"; };
 		0549D30C1D487AC900E9F379 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
@@ -58,6 +58,17 @@
 		0549D3101D487E0600E9F379 /* APIContant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIContant.m; sourceTree = "<group>"; };
 		0549D3121D489EAD00E9F379 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		059D02781D49D89200826602 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		059D02791D49D89200826602 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		059D027A1D49D89200826602 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		059D027B1D49D89200826602 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		059D027F1D49ED6900826602 /* TimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
+		059D02801D49ED6900826602 /* TimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCell.m; sourceTree = "<group>"; };
+		059D02811D49ED6900826602 /* TimeLineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeLineCell.xib; sourceTree = "<group>"; };
+		059D02841D49F7AC00826602 /* Status+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Status+CoreDataProperties.h"; sourceTree = "<group>"; };
+		059D02851D49F7AC00826602 /* Status+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Status+CoreDataProperties.m"; sourceTree = "<group>"; };
+		059D02861D49F7AC00826602 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		059D02871D49F7AC00826602 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
 		05CCDCCB1D4604BB00C8578B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F3F6701D4602710041BA25 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		05F3F6711D4602710041BA25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,11 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				0542752C1D4755B100115E25 /* Model */,
-				054275201D47454300115E25 /* CoreDataStack.h */,
-				054275211D47454300115E25 /* CoreDataStack.m */,
-				054275231D4748E000115E25 /* Model.xcdatamodeld */,
-				0542752D1D4755FA00115E25 /* CoreDataStack+User.h */,
-				0542752E1D4755FA00115E25 /* CoreDataStack+User.m */,
+				059D028A1D49FF2D00826602 /* CoreDataStack */,
 				0549D3151D489EB100E9F379 /* GenericTVController */,
 			);
 			name = CoreData;
@@ -146,10 +153,14 @@
 		0542752C1D4755B100115E25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				054275261D47559C00115E25 /* User+CoreDataProperties.h */,
-				054275271D47559C00115E25 /* User+CoreDataProperties.m */,
-				054275281D47559C00115E25 /* User.h */,
-				054275291D47559C00115E25 /* User.m */,
+				059D02841D49F7AC00826602 /* Status+CoreDataProperties.h */,
+				059D02851D49F7AC00826602 /* Status+CoreDataProperties.m */,
+				059D02861D49F7AC00826602 /* Status.h */,
+				059D02871D49F7AC00826602 /* Status.m */,
+				059D02781D49D89200826602 /* User+CoreDataProperties.h */,
+				059D02791D49D89200826602 /* User+CoreDataProperties.m */,
+				059D027A1D49D89200826602 /* User.h */,
+				059D027B1D49D89200826602 /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -174,6 +185,29 @@
 			name = GenericTVController;
 			sourceTree = "<group>";
 		};
+		059D027E1D49ED2C00826602 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F6831D4602710041BA25 /* TimeLine.storyboard */,
+				059D027F1D49ED6900826602 /* TimeLineCell.h */,
+				059D02801D49ED6900826602 /* TimeLineCell.m */,
+				059D02811D49ED6900826602 /* TimeLineCell.xib */,
+			);
+			name = TimeLine;
+			sourceTree = "<group>";
+		};
+		059D028A1D49FF2D00826602 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				054275201D47454300115E25 /* CoreDataStack.h */,
+				054275211D47454300115E25 /* CoreDataStack.m */,
+				054275231D4748E000115E25 /* Model.xcdatamodeld */,
+				0542752D1D4755FA00115E25 /* CoreDataStack+User.h */,
+				0542752E1D4755FA00115E25 /* CoreDataStack+User.m */,
+			);
+			name = CoreDataStack;
+			sourceTree = "<group>";
+		};
 		05F3F66F1D4602710041BA25 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +227,7 @@
 				05F3F6801D4602710041BA25 /* Spliash.storyboard */,
 				05F3F6811D4602710041BA25 /* SpliashViewController.h */,
 				05F3F6821D4602710041BA25 /* SpliashViewController.m */,
-				05F3F6831D4602710041BA25 /* TimeLine.storyboard */,
+				059D027E1D49ED2C00826602 /* TimeLine */,
 				05F3F6841D4602710041BA25 /* ViewController.h */,
 				05F3F6851D4602710041BA25 /* ViewController.m */,
 			);
@@ -277,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059D02831D49ED6900826602 /* TimeLineCell.xib in Resources */,
 				05F3F6891D4602710041BA25 /* LaunchScreen.storyboard in Resources */,
 				05F3F6921D4602710041BA25 /* Spliash.storyboard in Resources */,
 				05F3F6881D4602710041BA25 /* Assets.xcassets in Resources */,
@@ -346,16 +381,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0542752A1D47559C00115E25 /* User+CoreDataProperties.m in Sources */,
+				059D02821D49ED6900826602 /* TimeLineCell.m in Sources */,
+				059D027C1D49D89200826602 /* User+CoreDataProperties.m in Sources */,
 				05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */,
 				0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */,
 				0549D30E1D487AC900E9F379 /* Service.m in Sources */,
 				05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */,
+				059D027D1D49D89200826602 /* User.m in Sources */,
+				059D02891D49F7AC00826602 /* Status.m in Sources */,
 				0542751A1D473D0700115E25 /* UserTableViewCell.m in Sources */,
 				054275221D47454300115E25 /* CoreDataStack.m in Sources */,
 				05F3F68E1D4602710041BA25 /* main.m in Sources */,
-				0542752B1D47559C00115E25 /* User.m in Sources */,
 				054275251D4748E000115E25 /* Model.xcdatamodeld in Sources */,
+				059D02881D49F7AC00826602 /* Status+CoreDataProperties.m in Sources */,
 				05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */,
 				0542751E1D47438B00115E25 /* AccountTableViewController.m in Sources */,
 				0549D3111D487E0600E9F379 /* APIContant.m in Sources */,

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Service : NSObject
+
 - (void)authoriseWithUserName:(NSString *)userName password:(NSString *)password success:(void(^)(NSString *token, NSString *tokenSecret))success;
 
 + (instancetype)sharedInstance;

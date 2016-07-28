@@ -11,6 +11,8 @@
 #import "APIContant.h"
 #import "CoreDataStack.h"
 #import "CoreDataStack+User.h"
+#import "APIContant.h"
+#import "User+CoreDataProperties.h"
 
 @interface Service ()
 
@@ -26,18 +28,18 @@
 {
     
     NSURLRequest *request = [TDOAuth URLRequestForPath:API_ACCESS_TOKEN
-                                      GETParameters:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       userName, @"x_auth_username",
-                                                      password, @"x_auth_password",
-                                                      @"client_auth", @"x_auth_mode",
-                                                      nil]
-                                                host:FANFOU_BASE_HOST
-                                         consumerKey:API_OAUTH_CONSUMER_KEY
-                                      consumerSecret:API_OAUTH_CONSUMERSECRET
-                                         accessToken:nil
-                                         tokenSecret:nil];
+                                         GETParameters:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                        userName, @"x_auth_username",
+                                                        password, @"x_auth_password",
+                                                        @"client_auth", @"x_auth_mode",
+                                                        nil]
+                                                  host:FANFOU_BASE_HOST
+                                           consumerKey:API_OAUTH_CONSUMER_KEY
+                                        consumerSecret:API_OAUTH_CONSUMERSECRET
+                                           accessToken:nil
+                                           tokenSecret:nil];
     // 下载
-   NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"%@",str);
@@ -56,7 +58,7 @@
         success(token,tokenSecret);
         
         
-       
+        
     }];
     // 发送请求
     [task resume];
@@ -64,11 +66,15 @@
 
 - (void)requestVertifyCredential:(NSDictionary *)parameters accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret requestMethod:(NSString *)requestMethod success:(void(^)(NSDictionary *result))success
 {
-   NSURLRequest *request = [TDOAuth URLRequestForPath:API_VERIFY_CREDENTIAL parameters:parameters host:FANFOU_API_HOST consumerKey:API_OAUTH_CONSUMER_KEY consumerSecret:API_OAUTH_CONSUMERSECRET accessToken:accessToken tokenSecret:tokenSecret scheme:@"http" requestMethod:requestMethod dataEncoding:TDOAuthContentTypeUrlEncodedForm headerValues:nil signatureMethod:TDOAuthSignatureMethodHmacSha1];
+    NSURLRequest *request = [TDOAuth URLRequestForPath:API_VERIFY_CREDENTIAL parameters:parameters host:FANFOU_API_HOST consumerKey:API_OAUTH_CONSUMER_KEY consumerSecret:API_OAUTH_CONSUMERSECRET accessToken:accessToken tokenSecret:tokenSecret scheme:@"http" requestMethod:requestMethod dataEncoding:TDOAuthContentTypeUrlEncodedForm headerValues:nil signatureMethod:TDOAuthSignatureMethodHmacSha1];
+    
     
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
         
+        //        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        //        NSLog(@"str:%@",str);
+        NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+        NSLog(@"%@",result);
         [[CoreDataStack sharedCoreDataStack] insertOrUpdateWithUserProfile:result token:accessToken tokenSecret:tokenSecret];
         success(result);
     }];
@@ -84,7 +90,7 @@
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         configuration.timeoutIntervalForRequest = 30.0;
         _session = [NSURLSession sessionWithConfiguration:configuration];
-       
+        
     }
     return self;
 }
@@ -92,13 +98,43 @@
 + (instancetype)sharedInstance
 {
     static Service *service;
-
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         service = [[Service alloc] init];
         
     });
     return service;
+}
+
+
+#pragma mark - 公共的请求
+- (void)requestWithPath:(NSString *)path parameters:(NSDictionary *)parameters accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret requestMethod:(NSString *)requestMethod success:(void (^)(NSDictionary *result))success failure:(void(^)(NSError *error))failure
+{
+    NSURLRequest *request = [TDOAuth URLRequestForPath:path parameters:parameters host:FANFOU_API_HOST consumerKey:API_OAUTH_CONSUMER_KEY consumerSecret:API_OAUTH_CONSUMERSECRET accessToken:accessToken tokenSecret:tokenSecret scheme:@"http" requestMethod:requestMethod dataEncoding:TDOAuthContentTypeUrlEncodedForm headerValues:nil signatureMethod:TDOAuthSignatureMethodHmacSha1];
+    
+    NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (error) {
+            failure(error);
+        } else {
+            NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+            NSLog(@"%@",result);
+            
+            success(result);
+        }
+    }];
+    [task resume];
+    
+}
+
+#pragma mark - Status
+- (void)requestStatusWithSuccess:(void (^)(NSDictionary *result))success failure:(void(^)(NSError *error))failure
+{
+    User *user = [CoreDataStack sharedCoreDataStack].currentUser;
+    
+    [self requestWithPath:API_HOME_TIMELINE parameters:nil accessToken:user.token tokenSecret:user.tokenSecret requestMethod:@"GET" success:success failure:failure];
+    
 }
 
 @end

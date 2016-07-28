@@ -29,7 +29,7 @@
 
 - (NSManagedObjectModel *)model
 {
-    if (_model) {
+    if (_model == nil) {
         
         // 1. 方法一
         NSURL *url = [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
@@ -80,6 +80,9 @@
     if (_context == nil) {
         // NSMainQueueConcurrencyType 并发（异步）
         _context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+        // 每一个context都有一个persistentStoreCoordinator的属性
+        // 当使用context的时候需要它不为空
+        _context.persistentStoreCoordinator = self.coordinator;
     }
     
     return _context;
