@@ -27,9 +27,7 @@
             [self performSegueWithIdentifier:@"ShowAccountSegue" sender:nil];
         }];
     }];
-    
-    
-    
+
     // 2. 登录失败
     
     // UIAlertController

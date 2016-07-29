@@ -22,6 +22,8 @@
 		059D02831D49ED6900826602 /* TimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059D02811D49ED6900826602 /* TimeLineCell.xib */; };
 		059D02881D49F7AC00826602 /* Status+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02851D49F7AC00826602 /* Status+CoreDataProperties.m */; };
 		059D02891D49F7AC00826602 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02871D49F7AC00826602 /* Status.m */; };
+		059D02901D4B20DE00826602 /* CoreDataStack+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D028F1D4B20DE00826602 /* CoreDataStack+Status.m */; };
+		059D02931D4B321B00826602 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02921D4B321B00826602 /* TimeLineTableViewController.m */; };
 		05F3F6861D4602710041BA25 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6701D4602710041BA25 /* Account.storyboard */; };
 		05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6721D4602710041BA25 /* AppDelegate.m */; };
 		05F3F6881D4602710041BA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6731D4602710041BA25 /* Assets.xcassets */; };
@@ -69,6 +71,10 @@
 		059D02851D49F7AC00826602 /* Status+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Status+CoreDataProperties.m"; sourceTree = "<group>"; };
 		059D02861D49F7AC00826602 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
 		059D02871D49F7AC00826602 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		059D028E1D4B20DE00826602 /* CoreDataStack+Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreDataStack+Status.h"; sourceTree = "<group>"; };
+		059D028F1D4B20DE00826602 /* CoreDataStack+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataStack+Status.m"; sourceTree = "<group>"; };
+		059D02911D4B321B00826602 /* TimeLineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewController.h; sourceTree = "<group>"; };
+		059D02921D4B321B00826602 /* TimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewController.m; sourceTree = "<group>"; };
 		05CCDCCB1D4604BB00C8578B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F3F6701D4602710041BA25 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		05F3F6711D4602710041BA25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,6 +198,8 @@
 				059D027F1D49ED6900826602 /* TimeLineCell.h */,
 				059D02801D49ED6900826602 /* TimeLineCell.m */,
 				059D02811D49ED6900826602 /* TimeLineCell.xib */,
+				059D02911D4B321B00826602 /* TimeLineTableViewController.h */,
+				059D02921D4B321B00826602 /* TimeLineTableViewController.m */,
 			);
 			name = TimeLine;
 			sourceTree = "<group>";
@@ -204,6 +212,8 @@
 				054275231D4748E000115E25 /* Model.xcdatamodeld */,
 				0542752D1D4755FA00115E25 /* CoreDataStack+User.h */,
 				0542752E1D4755FA00115E25 /* CoreDataStack+User.m */,
+				059D028E1D4B20DE00826602 /* CoreDataStack+Status.h */,
+				059D028F1D4B20DE00826602 /* CoreDataStack+Status.m */,
 			);
 			name = CoreDataStack;
 			sourceTree = "<group>";
@@ -386,6 +396,8 @@
 				05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */,
 				0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */,
 				0549D30E1D487AC900E9F379 /* Service.m in Sources */,
+				059D02901D4B20DE00826602 /* CoreDataStack+Status.m in Sources */,
+				059D02931D4B321B00826602 /* TimeLineTableViewController.m in Sources */,
 				05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */,
 				059D027D1D49D89200826602 /* User.m in Sources */,
 				059D02891D49F7AC00826602 /* Status.m in Sources */,

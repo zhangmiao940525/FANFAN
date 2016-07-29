@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Status;
 
 @interface TimeLineCell : UITableViewCell
 
@@ -18,5 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateCreatedLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
+- (void)configureWithStatus:(Status *)status;
 
 @end

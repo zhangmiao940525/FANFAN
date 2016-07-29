@@ -12,13 +12,14 @@
 NSString *const USER_ENTITY = @"User";
 
 @implementation CoreDataStack (User)
+@dynamic currentUser;
 
 - (User *)currentUser
 {
     NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:USER_ENTITY];
     //
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isActive = %@",@YES];
-    fr.predicate = predicate;
+   // NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isActive = %@",@YES];
+  //  fr.predicate = predicate;
     // 执行查询
     NSError *error;
     NSArray *users = [self.context executeFetchRequest:fr error:&error];
@@ -44,7 +45,7 @@ NSString *const USER_ENTITY = @"User";
 }
 
 // 如果用户不存在就插入数据，如果用户存在就更新数据
-- (void)insertOrUpdateWithUserProfile:(NSDictionary *)userProfile token:(NSString *)token tokenSecret:(NSString *)tokenSecret
+- (User *)insertOrUpdateWithUserProfile:(NSDictionary *)userProfile token:(NSString *)token tokenSecret:(NSString *)tokenSecret
 {
     // 检测id是否存在
     User *user = [self checkImportedWithUserID:userProfile[@"id"]];
@@ -56,6 +57,8 @@ NSString *const USER_ENTITY = @"User";
     user.iconURL = userProfile[@"profile_image_url"];
     user.token = token;
     user.tokenSecret = tokenSecret;
+    
+    return user;
 }
 
 @end

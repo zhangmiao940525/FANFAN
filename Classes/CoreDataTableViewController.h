@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 
 @interface CoreDataTableViewController : UITableViewController
+
 // 用来配置tableview显示的内容
 @property (nonatomic,strong)NSFetchedResultsController *frc;
 

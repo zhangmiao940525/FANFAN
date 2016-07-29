@@ -71,8 +71,6 @@
     
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
-        //        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        //        NSLog(@"str:%@",str);
         NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
         NSLog(@"%@",result);
         [[CoreDataStack sharedCoreDataStack] insertOrUpdateWithUserProfile:result token:accessToken tokenSecret:tokenSecret];
@@ -108,8 +106,8 @@
 }
 
 
-#pragma mark - 公共的请求
-- (void)requestWithPath:(NSString *)path parameters:(NSDictionary *)parameters accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret requestMethod:(NSString *)requestMethod success:(void (^)(NSDictionary *result))success failure:(void(^)(NSError *error))failure
+#pragma mark - Base Request
+- (void)requestWithPath:(NSString *)path parameters:(NSDictionary *)parameters accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret requestMethod:(NSString *)requestMethod success:(void (^)(NSArray *result))success failure:(void(^)(NSError *error))failure
 {
     NSURLRequest *request = [TDOAuth URLRequestForPath:path parameters:parameters host:FANFOU_API_HOST consumerKey:API_OAUTH_CONSUMER_KEY consumerSecret:API_OAUTH_CONSUMERSECRET accessToken:accessToken tokenSecret:tokenSecret scheme:@"http" requestMethod:requestMethod dataEncoding:TDOAuthContentTypeUrlEncodedForm headerValues:nil signatureMethod:TDOAuthSignatureMethodHmacSha1];
     
@@ -118,7 +116,7 @@
         if (error) {
             failure(error);
         } else {
-            NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+            NSArray *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
             NSLog(@"%@",result);
             
             success(result);
@@ -129,9 +127,11 @@
 }
 
 #pragma mark - Status
-- (void)requestStatusWithSuccess:(void (^)(NSDictionary *result))success failure:(void(^)(NSError *error))failure
+- (void)requestStatusWithSuccess:(void (^)(NSArray *result))success failure:(void(^)(NSError *error))failure
 {
+    
     User *user = [CoreDataStack sharedCoreDataStack].currentUser;
+    
     
     [self requestWithPath:API_HOME_TIMELINE parameters:nil accessToken:user.token tokenSecret:user.tokenSecret requestMethod:@"GET" success:success failure:failure];
     

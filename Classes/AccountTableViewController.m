@@ -28,7 +28,7 @@
     
     self.frc = [[NSFetchedResultsController alloc] initWithFetchRequest:fr managedObjectContext:[CoreDataStack sharedCoreDataStack].context sectionNameKeyPath:nil cacheName:nil];
     
-    NSLog(@"self.frc.sections.count:%lu",self.frc.sections.count);
+   
     
     self.frc.delegate = self;
     
@@ -42,6 +42,7 @@
     [self configureFetch];
     //
     [self performFetch];
+     NSLog(@"self.frc.sections.count:%lu",self.frc.sections.count);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -49,8 +50,7 @@
     UserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserCell"];
     
     User *user = [self.frc objectAtIndexPath:indexPath];
-    cell.nameLabel.text = user.name;
-    cell.idLabel.text = user.uid;
+
     [cell configureWithUser:user];
     
     return cell;
