@@ -24,6 +24,9 @@
 		059D02891D49F7AC00826602 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02871D49F7AC00826602 /* Status.m */; };
 		059D02901D4B20DE00826602 /* CoreDataStack+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D028F1D4B20DE00826602 /* CoreDataStack+Status.m */; };
 		059D02931D4B321B00826602 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02921D4B321B00826602 /* TimeLineTableViewController.m */; };
+		05ACB8961D4F199C00336AFE /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB8931D4F199C00336AFE /* Photo+CoreDataProperties.m */; };
+		05ACB8971D4F199C00336AFE /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB8951D4F199C00336AFE /* Photo.m */; };
+		05ACB8991D4F1A7600336AFE /* MappingModel.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB8981D4F1A7600336AFE /* MappingModel.xcmappingmodel */; };
 		05F3F6861D4602710041BA25 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6701D4602710041BA25 /* Account.storyboard */; };
 		05F3F6871D4602710041BA25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6721D4602710041BA25 /* AppDelegate.m */; };
 		05F3F6881D4602710041BA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6731D4602710041BA25 /* Assets.xcassets */; };
@@ -75,6 +78,12 @@
 		059D028F1D4B20DE00826602 /* CoreDataStack+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataStack+Status.m"; sourceTree = "<group>"; };
 		059D02911D4B321B00826602 /* TimeLineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewController.h; sourceTree = "<group>"; };
 		059D02921D4B321B00826602 /* TimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewController.m; sourceTree = "<group>"; };
+		05ACB8911D4F173000336AFE /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		05ACB8921D4F199C00336AFE /* Photo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		05ACB8931D4F199C00336AFE /* Photo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		05ACB8941D4F199C00336AFE /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		05ACB8951D4F199C00336AFE /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		05ACB8981D4F1A7600336AFE /* MappingModel.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = MappingModel.xcmappingmodel; sourceTree = "<group>"; };
 		05CCDCCB1D4604BB00C8578B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F3F6701D4602710041BA25 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		05F3F6711D4602710041BA25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +126,7 @@
 			children = (
 				052952001D46038700110C7B /* Podfile */,
 				05F3F66F1D4602710041BA25 /* Classes */,
+				05ACB8A01D4F303400336AFE /* Other */,
 				050A17731D45D99F00A3BFDF /* Products */,
 				455605033DEB731CE5FC6F54 /* Pods */,
 				D98D65A9986CE944BED435BE /* Frameworks */,
@@ -134,14 +144,8 @@
 		0542751B1D473D1500115E25 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				05F3F6791D4602710041BA25 /* Login.storyboard */,
-				05F3F67A1D4602710041BA25 /* LoginViewController.h */,
-				05F3F67B1D4602710041BA25 /* LoginViewController.m */,
-				054275181D473D0700115E25 /* UserTableViewCell.h */,
-				054275191D473D0700115E25 /* UserTableViewCell.m */,
-				05F3F6701D4602710041BA25 /* Account.storyboard */,
-				0542751C1D47438B00115E25 /* AccountTableViewController.h */,
-				0542751D1D47438B00115E25 /* AccountTableViewController.m */,
+				05ACB89F1D4F2FB700336AFE /* Controller */,
+				05ACB89E1D4F2FB100336AFE /* View */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -159,6 +163,11 @@
 		0542752C1D4755B100115E25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05ACB8981D4F1A7600336AFE /* MappingModel.xcmappingmodel */,
+				05ACB8921D4F199C00336AFE /* Photo+CoreDataProperties.h */,
+				05ACB8931D4F199C00336AFE /* Photo+CoreDataProperties.m */,
+				05ACB8941D4F199C00336AFE /* Photo.h */,
+				05ACB8951D4F199C00336AFE /* Photo.m */,
 				059D02841D49F7AC00826602 /* Status+CoreDataProperties.h */,
 				059D02851D49F7AC00826602 /* Status+CoreDataProperties.m */,
 				059D02861D49F7AC00826602 /* Status.h */,
@@ -194,12 +203,9 @@
 		059D027E1D49ED2C00826602 /* TimeLine */ = {
 			isa = PBXGroup;
 			children = (
-				05F3F6831D4602710041BA25 /* TimeLine.storyboard */,
-				059D027F1D49ED6900826602 /* TimeLineCell.h */,
-				059D02801D49ED6900826602 /* TimeLineCell.m */,
-				059D02811D49ED6900826602 /* TimeLineCell.xib */,
-				059D02911D4B321B00826602 /* TimeLineTableViewController.h */,
-				059D02921D4B321B00826602 /* TimeLineTableViewController.m */,
+				05ACB89C1D4F2F1D00336AFE /* Model */,
+				05ACB89B1D4F2F1400336AFE /* Controller */,
+				05ACB89A1D4F2F0D00336AFE /* VIew */,
 			);
 			name = TimeLine;
 			sourceTree = "<group>";
@@ -218,28 +224,117 @@
 			name = CoreDataStack;
 			sourceTree = "<group>";
 		};
-		05F3F66F1D4602710041BA25 /* Classes */ = {
+		05ACB89A1D4F2F0D00336AFE /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F6831D4602710041BA25 /* TimeLine.storyboard */,
+				059D027F1D49ED6900826602 /* TimeLineCell.h */,
+				059D02801D49ED6900826602 /* TimeLineCell.m */,
+				059D02811D49ED6900826602 /* TimeLineCell.xib */,
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		05ACB89B1D4F2F1400336AFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				059D02911D4B321B00826602 /* TimeLineTableViewController.h */,
+				059D02921D4B321B00826602 /* TimeLineTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		05ACB89C1D4F2F1D00336AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		05ACB89D1D4F2F6B00336AFE /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
 				0549D30B1D487AB500E9F379 /* Service */,
-				0542751F1D47452100115E25 /* CoreData */,
-				0542751B1D473D1500115E25 /* Login */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		05ACB89E1D4F2FB100336AFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F6701D4602710041BA25 /* Account.storyboard */,
+				05F3F6791D4602710041BA25 /* Login.storyboard */,
+				054275181D473D0700115E25 /* UserTableViewCell.h */,
+				054275191D473D0700115E25 /* UserTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		05ACB89F1D4F2FB700336AFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F67A1D4602710041BA25 /* LoginViewController.h */,
+				05F3F67B1D4602710041BA25 /* LoginViewController.m */,
+				0542751C1D47438B00115E25 /* AccountTableViewController.h */,
+				0542751D1D47438B00115E25 /* AccountTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		05ACB8A01D4F303400336AFE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F6841D4602710041BA25 /* ViewController.h */,
+				05F3F6851D4602710041BA25 /* ViewController.m */,
+				05CCDCCB1D4604BB00C8578B /* Info.plist */,
+				05F3F67C1D4602710041BA25 /* main.m */,
 				05F3F6711D4602710041BA25 /* AppDelegate.h */,
 				05F3F6721D4602710041BA25 /* AppDelegate.m */,
-				05CCDCCB1D4604BB00C8578B /* Info.plist */,
-				05F3F6731D4602710041BA25 /* Assets.xcassets */,
-				05F3F6741D4602710041BA25 /* LaunchScreen.storyboard */,
-				05F3F6761D4602710041BA25 /* Main.storyboard */,
-				05F3F67C1D4602710041BA25 /* main.m */,
+			);
+			name = Other;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		05ACB8A11D4F303F00336AFE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				05ACB8A21D4F304D00336AFE /* Controller */,
+				05ACB8A31D4F308700336AFE /* View */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		05ACB8A21D4F304D00336AFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F6811D4602710041BA25 /* SpliashViewController.h */,
+				05F3F6821D4602710041BA25 /* SpliashViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		05ACB8A31D4F308700336AFE /* View */ = {
+			isa = PBXGroup;
+			children = (
 				05F3F67D1D4602710041BA25 /* Me.storyboard */,
 				05F3F67E1D4602710041BA25 /* MentionMe.storyboard */,
 				05F3F67F1D4602710041BA25 /* Message.storyboard */,
 				05F3F6801D4602710041BA25 /* Spliash.storyboard */,
-				05F3F6811D4602710041BA25 /* SpliashViewController.h */,
-				05F3F6821D4602710041BA25 /* SpliashViewController.m */,
+				05F3F6741D4602710041BA25 /* LaunchScreen.storyboard */,
+				05F3F6761D4602710041BA25 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		05F3F66F1D4602710041BA25 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				05ACB89D1D4F2F6B00336AFE /* OAuth */,
+				0542751F1D47452100115E25 /* CoreData */,
+				0542751B1D473D1500115E25 /* Login */,
+				05F3F6731D4602710041BA25 /* Assets.xcassets */,
+				05ACB8A11D4F303F00336AFE /* Main */,
 				059D027E1D49ED2C00826602 /* TimeLine */,
-				05F3F6841D4602710041BA25 /* ViewController.h */,
-				05F3F6851D4602710041BA25 /* ViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -393,11 +488,14 @@
 			files = (
 				059D02821D49ED6900826602 /* TimeLineCell.m in Sources */,
 				059D027C1D49D89200826602 /* User+CoreDataProperties.m in Sources */,
+				05ACB8991D4F1A7600336AFE /* MappingModel.xcmappingmodel in Sources */,
 				05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */,
+				05ACB8961D4F199C00336AFE /* Photo+CoreDataProperties.m in Sources */,
 				0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */,
 				0549D30E1D487AC900E9F379 /* Service.m in Sources */,
 				059D02901D4B20DE00826602 /* CoreDataStack+Status.m in Sources */,
 				059D02931D4B321B00826602 /* TimeLineTableViewController.m in Sources */,
+				05ACB8971D4F199C00336AFE /* Photo.m in Sources */,
 				05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */,
 				059D027D1D49D89200826602 /* User.m in Sources */,
 				059D02891D49F7AC00826602 /* Status.m in Sources */,
@@ -569,9 +667,10 @@
 		054275231D4748E000115E25 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				05ACB8911D4F173000336AFE /* Model 2.xcdatamodel */,
 				054275241D4748E000115E25 /* Model.xcdatamodel */,
 			);
-			currentVersion = 054275241D4748E000115E25 /* Model.xcdatamodel */;
+			currentVersion = 05ACB8911D4F173000336AFE /* Model 2.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

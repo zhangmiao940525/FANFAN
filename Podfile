@@ -6,5 +6,6 @@ target 'Fanner' do
 pod 'TDOAuth'
 pod 'AFNetworking', '~> 3.0'
 pod 'SDWebImage'
+pod 'JTSImageViewController'
 
 end

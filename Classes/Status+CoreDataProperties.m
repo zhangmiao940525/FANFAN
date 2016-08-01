@@ -2,7 +2,7 @@
 //  Status+CoreDataProperties.m
 //  Fanner
 //
-//  Created by ZHANGMIA on 7/29/16.
+//  Created by ZHANGMIA on 8/1/16.
 //  Copyright © 2016 ZHANGMIA. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,9 +14,10 @@
 @implementation Status (CoreDataProperties)
 
 @dynamic created_at;
+@dynamic sid;
 @dynamic source;
 @dynamic text;
-@dynamic sid;
 @dynamic user;
+@dynamic photo;
 
 @end

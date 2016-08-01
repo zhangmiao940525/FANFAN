@@ -64,7 +64,11 @@
         NSURL *sqliteURL = [[self docmentURL] URLByAppendingPathComponent:@"Model.sqlite"];
         
         NSError *error;
-        NSPersistentStore *store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteURL options:nil error:&error];
+        // 数据库更新操作
+        // 保证映射用旧的->新的的映射 ，所以这里设为NO
+        NSDictionary *dic = @{NSMigratePersistentStoresAutomaticallyOption: @YES, NSInferMappingModelAutomaticallyOption: @NO};
+        // option 做数据库迁徙的
+        NSPersistentStore *store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteURL options:dic error:&error];
         if (!store) {
             NSLog(@"error = %@",error.description);
         }
