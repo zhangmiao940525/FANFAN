@@ -10,6 +10,7 @@
 #import "Status.h"
 #import "CoreDataStack+User.h"
 #import "Photo.h"
+#import "CoreDataStack+Common.h"
 
 static NSString *const STATUS_ENTITY = @"Status";
 static NSString *const PHOTO_ENTITY = @"Photo";
@@ -47,11 +48,7 @@ static NSString *const PHOTO_ENTITY = @"Photo";
             photo = [NSEntityDescription insertNewObjectForEntityForName:PHOTO_ENTITY inManagedObjectContext:self.context];
         }
     }
-    // 更新用户发布的图片 （photo表）
-    NSDictionary *photoDic = statusProfile[@"photo"];
-    photo.imageurl = photoDic[@"imageurl"];
-    photo.thumburl = photoDic[@"thumburl"];
-    photo.largeurl = photoDic[@"largeurl"];
+
     
     // 建立status和photo的关系 (更新关系）
     status.photo = photo;
@@ -60,15 +57,19 @@ static NSString *const PHOTO_ENTITY = @"Photo";
     status.sid = statusProfile[@"id"];
     status.source = statusProfile[@"source"];
     status.text = statusProfile[@"text"];
-    
-    NSString *dataStr = statusProfile[@"created_at"];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"E MM dd HH:mm:ssZZZZZ yyyy";
-    status.created_at = [formatter dateFromString:dataStr];
+
+    status.created_at = [self dateFromString:statusProfile[@"created_at"]];
     
    // NSLog(@"created_at = %@",status.created_at);
-   
+    NSString *favStr = statusProfile[@"favorited"];
+    // 把布尔类型转成了NSNumber
+    status.favorited = @(favStr.boolValue);
     
+    // 更新用户发布的图片 （photo表）
+    NSDictionary *photoDic = statusProfile[@"photo"];
+    photo.imageurl = photoDic[@"imageurl"];
+    photo.thumburl = photoDic[@"thumburl"];
+    photo.largeurl = photoDic[@"largeurl"];
     
     return status;
 }

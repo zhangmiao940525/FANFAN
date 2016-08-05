@@ -22,3 +22,11 @@ extern NSString *const FANFOU_BASE_HOST;
 extern NSString *const API_VERIFY_CREDENTIAL;
 
 extern NSString *const API_HOME_TIMELINE;
+
+extern NSString *const API_UPDATE_TEXT;
+
+extern NSString *const API_UPLOAD_PHOTO;
+
+extern NSString *const API_FAVORITES_CREATE;
+
+extern NSString *const API_CONVERSATION_LIST;

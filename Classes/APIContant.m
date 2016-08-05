@@ -22,3 +22,11 @@ NSString *const API_VERIFY_CREDENTIAL = @"/account/verify_credentials.json";
 NSString *const FANFOU_BASE_HOST = @"fanfou.com";
 //
 NSString *const API_HOME_TIMELINE = @"/statuses/home_timeline.json";
+//
+NSString *const API_UPDATE_TEXT = @"/statuses/update.json";
+//
+NSString *const API_UPLOAD_PHOTO = @"/photos/upload.json";
+// 
+NSString *const API_FAVORITES_CREATE = @"/favorites/create/";
+// direct_messages/new.[json
+NSString *const API_CONVERSATION_LIST = @"/direct_messages/conversation_list.json";

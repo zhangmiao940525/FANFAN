@@ -12,9 +12,10 @@
 #import "CoreDataStack.h"
 #import "Service.h"
 #import "CoreDataStack+Status.h"
-#import <JTSImageViewController.h>
+#import "JTSImageViewController.h"
 #import "Photo.h"
 #import <SDImageCache.h>
+#import "CellToolbarView.h"
 
 @interface TimeLineTableViewController ()<JTSImageViewControllerInteractionsDelegate>
 
@@ -28,7 +29,7 @@
 {
     NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:@"Status"];
     // 设置排序
-    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"sid" ascending:YES];
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:NO];
     
     NSArray *descriptors = @[descriptor];
     fr.sortDescriptors = descriptors;
@@ -42,25 +43,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+// 增加下拉刷新
+     [self createRefrenshControl];
+    
     // 注册cell
     [self.tableView registerNib:[UINib nibWithNibName:@"TimeLineCell" bundle:nil] forCellReuseIdentifier:@"TimelineCell"];
     // cell预估高度
     self.tableView.estimatedRowHeight = 100;
     
-    [[Service sharedInstance] requestStatusWithSuccess:^(NSArray *result) {
-        [[CoreDataStack sharedCoreDataStack] insertStatusWithArrayProfile:result];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //
-            [self configureFetch];
-            // 执行查询
-            [self performFetch];
-        });
-      
-        
-    } failure:^(NSError *error) {
-        
-    }];
+    [self requestData];
+   
 }
 
 - (void)showPhotoWithCell:(TimeLineCell *)cell photo:(Photo *)photo
@@ -84,13 +76,19 @@
 {
     TimeLineCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineCell"];
     
+    
     Status *status = [self.frc objectAtIndexPath:indexPath];
     
     [cell configureWithStatus:status];
+    // 配置收藏按钮
+    [cell.cellToolbar setupStarButtonWithBOOL:status.favorited.boolValue];
+    
     
     cell.didSelectPhotoBlock = ^(TimeLineCell *cell){
         [self showPhotoWithCell:cell photo:status.photo];
     };
+    // 设置代理
+    cell.cellToolbar.delegate = self;
     
     
     
@@ -119,8 +117,68 @@
     
     [imageViewer presentViewController:alertCtr animated:YES completion:nil];
 }
+// TableViewController 特有的属性refreshControl
+// 增加下拉刷新
+- (void)createRefrenshControl
+{
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"正在加载数据..."];
+    [self.refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+}
 
+- (void)refreshData
+{
+    [self requestData];
+    
+    [self.refreshControl endRefreshing];
+}
 
+- (void)requestData
+{
+    
+    [[Service sharedInstance] requestStatusWithSuccess:^(NSArray *result) {
+        [[CoreDataStack sharedCoreDataStack] insertStatusWithArrayProfile:result];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //
+            [self configureFetch];
+            // 执行查询
+            [self performFetch];
+        });
+        
+        
+    } failure:^(NSError *error) {
+        
+    }];
+    
+}
+
+- (void)starWithCellToolbar:(CellToolbarView *)toolbar sender:(id)sender forEvent:(UIEvent *)event
+{
+    // 取到收藏所用的indexPath，也就是所在的cell
+    // 取到所有的touches
+    NSSet *touches = [event allTouches];
+    // 取到某一个touch
+    UITouch  *touch = [touches anyObject];
+    // 取到这个touch所在的位置location
+    CGPoint point = [touch locationInView:self.tableView];
+    // 最后获取到这个位置所在的indexPath
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:point];
+    // 用frc取到这个cell下的status对象
+    Status *status = [self.frc objectAtIndexPath:indexPath];
+    
+    // 请求收藏接口
+    [[Service sharedInstance] starWithStatusID:status.sid success:^(NSArray *result) {
+        
+        NSLog(@"result = %@", result);
+        [[CoreDataStack sharedCoreDataStack] insertOrUpdateWithStatusProfile:result];
+        
+        [toolbar setupStarButtonWithBOOL:status.favorited.boolValue];
+      
+    } failure:^(NSError *error) {
+        NSLog(@"error = %@", error);
+    }];
+    
+}
 
 
 @end

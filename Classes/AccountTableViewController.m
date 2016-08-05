@@ -42,8 +42,9 @@
     [self configureFetch];
     //
     [self performFetch];
-     NSLog(@"self.frc.sections.count:%lu",self.frc.sections.count);
+    // NSLog(@"self.frc.sections.count:%lu",self.frc.sections.count);
 }
+#pragma mark - 数据源方法
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -55,5 +56,15 @@
     
     return cell;
 }
+
+#pragma mark - UITableView代理
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%s",__func__);
+    User *user = [self.frc objectAtIndexPath:indexPath];
+    user.isActive = @YES;
+}
+
+
 
 @end

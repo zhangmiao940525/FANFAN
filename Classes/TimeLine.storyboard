@@ -18,11 +18,25 @@
                             <outlet property="delegate" destination="Z8h-aH-rLs" id="2rD-Ha-hnG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Timeline" id="ADO-JT-4tz"/>
+                    <navigationItem key="navigationItem" title="Timeline" id="ADO-JT-4tz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="obp-tE-BSI">
+                            <connections>
+                                <segue destination="mj6-9W-A5I" kind="presentation" id="mbb-ZO-PV9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mcb-YN-6Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1111" y="235"/>
+        </scene>
+        <!--Compose-->
+        <scene sceneID="fde-2b-kUo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Compose" id="mj6-9W-A5I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ang-fX-8rP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559.5" y="235"/>
         </scene>
         <!--时间线-->
         <scene sceneID="GO5-9R-q9t">

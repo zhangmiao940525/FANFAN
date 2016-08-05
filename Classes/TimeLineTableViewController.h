@@ -7,7 +7,10 @@
 //
 
 #import "CoreDataTableViewController.h"
+#import "CellToolbarView.h"
 
-@interface TimeLineTableViewController : CoreDataTableViewController<NSFetchedResultsControllerDelegate>
+@interface TimeLineTableViewController : CoreDataTableViewController<NSFetchedResultsControllerDelegate,CellToolbarDelegate>
+
+
 
 @end

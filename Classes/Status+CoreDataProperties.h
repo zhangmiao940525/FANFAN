@@ -2,7 +2,7 @@
 //  Status+CoreDataProperties.h
 //  Fanner
 //
-//  Created by ZHANGMIA on 8/1/16.
+//  Created by ZHANGMIA on 8/5/16.
 //  Copyright © 2016 ZHANGMIA. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -11,17 +11,17 @@
 
 #import "Status.h"
 @class Photo;
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Status (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSDate *created_at;
+@property (nullable, nonatomic, retain) NSNumber *favorited;
 @property (nullable, nonatomic, retain) NSString *sid;
 @property (nullable, nonatomic, retain) NSString *source;
 @property (nullable, nonatomic, retain) NSString *text;
+@property (nullable, nonatomic, retain) Photo *photo;
 @property (nullable, nonatomic, retain) User *user;
-@property (nullable, nonatomic, strong) Photo *photo;
 
 @end
 

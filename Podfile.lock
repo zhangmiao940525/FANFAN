@@ -14,6 +14,17 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DTCoreText (1.6.17):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.10)
+  - DTFoundation/DTAnimatedGIF (1.7.10)
+  - DTFoundation/DTHTMLParser (1.7.10):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.10):
+    - DTFoundation/Core
   - JTSImageViewController (1.5.1)
   - OMGHTTPURLRQ/UserAgent (3.1.2)
   - SDWebImage (3.8.1):
@@ -24,17 +35,20 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - DTCoreText
   - JTSImageViewController
   - SDWebImage
   - TDOAuth
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DTCoreText: 3ea8bba23dd2141ba18adb227a7dd33a822df1c4
+  DTFoundation: 3b6b1b817d2a7fb02e7eaf2596c922a68145bd43
   JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
   OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   TDOAuth: f7e356e834295b83c7b5066ee72a30f128c5f722
 
-PODFILE CHECKSUM: c86d25fd0f92ed870cb543aa2bfbe9873b922af8
+PODFILE CHECKSUM: 4303ce5281e727ec5286f28b62c052da14ccd8eb
 
 COCOAPODS: 1.0.1

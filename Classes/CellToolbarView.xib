@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CellToolbarView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p1-N5-RcE">
+                    <rect key="frame" x="8" y="0.0" width="119.5" height="60"/>
+                    <state key="normal" title="转发"/>
+                    <connections>
+                        <action selector="repost:forEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="BeY-xq-tej"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-W0-v9M">
+                    <rect key="frame" x="127.5" y="0.0" width="120" height="60"/>
+                    <state key="normal" title="回复"/>
+                    <connections>
+                        <action selector="reply:forEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="PgO-Rr-wWa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7om-RN-ibm">
+                    <rect key="frame" x="247" y="0.0" width="119.5" height="60"/>
+                    <state key="normal" title="收藏"/>
+                    <connections>
+                        <action selector="star:forEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="qCV-vs-LPF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="h2h-W0-v9M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1LB-z7-ymO"/>
+                <constraint firstItem="h2h-W0-v9M" firstAttribute="width" secondItem="2p1-N5-RcE" secondAttribute="width" id="5VL-rZ-mmi"/>
+                <constraint firstAttribute="bottom" secondItem="7om-RN-ibm" secondAttribute="bottom" id="9uM-sP-9h4"/>
+                <constraint firstAttribute="bottom" secondItem="h2h-W0-v9M" secondAttribute="bottom" id="F8f-Yq-Xvi"/>
+                <constraint firstItem="2p1-N5-RcE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FbT-bN-qrf"/>
+                <constraint firstItem="h2h-W0-v9M" firstAttribute="leading" secondItem="2p1-N5-RcE" secondAttribute="trailing" id="Fj8-52-4Sa"/>
+                <constraint firstItem="7om-RN-ibm" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="Ml0-02-me7"/>
+                <constraint firstItem="2p1-N5-RcE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="lXg-fP-1RF"/>
+                <constraint firstItem="7om-RN-ibm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lul-AS-z6M"/>
+                <constraint firstItem="7om-RN-ibm" firstAttribute="width" secondItem="2p1-N5-RcE" secondAttribute="width" id="nrA-0k-6eP"/>
+                <constraint firstAttribute="bottom" secondItem="2p1-N5-RcE" secondAttribute="bottom" id="tS7-Ym-C6M"/>
+                <constraint firstItem="7om-RN-ibm" firstAttribute="leading" secondItem="h2h-W0-v9M" secondAttribute="trailing" id="wYG-4D-a8O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="starBtn" destination="7om-RN-ibm" id="JnS-oP-itf"/>
+            </connections>
+            <point key="canvasLocation" x="235.5" y="-768"/>
+        </view>
+    </objects>
+</document>

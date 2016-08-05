@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 @class Status;
 @class TimeLineCell;
+@class DTAttributedLabel;
+@class CellToolbarView;
 
 typedef void(^DidSelectPhotoBlock)(TimeLineCell *cell);
 
@@ -23,10 +25,16 @@ typedef void(^DidSelectPhotoBlock)(TimeLineCell *cell);
 
 @property (weak, nonatomic) IBOutlet UILabel *dateCreatedLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet DTAttributedLabel *contentsLabel;
+
 
 @property (strong, nonatomic) DidSelectPhotoBlock didSelectPhotoBlock;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
+
+@property (weak, nonatomic) IBOutlet CellToolbarView *toolbar;
+
+@property (weak, nonatomic) CellToolbarView *cellToolbar;
 
 - (void)configureWithStatus:(Status *)status;
 
