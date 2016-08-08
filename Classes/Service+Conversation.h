@@ -9,7 +9,9 @@
 #import "Service.h"
 
 @interface Service (Conversation)
-
+/** 返回一个conversation数组 */
 - (void)conversationListWithSuccess:(void(^)(NSArray *result))success failure:(void(^)(NSError *error))failure;
+/** 返回一个message数组 */
+- (void)conversationsWithUserID:(NSString *)userID success:(void(^)(id result))success failure:(void(^)(NSError *error))failure;
 
 @end

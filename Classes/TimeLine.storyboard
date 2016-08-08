@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Timeline-->
+        <!--时间线-->
         <scene sceneID="fW1-wO-wuv">
             <objects>
                 <viewController id="Z8h-aH-rLs" customClass="TimeLineTableViewController" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                             <outlet property="delegate" destination="Z8h-aH-rLs" id="2rD-Ha-hnG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Timeline" id="ADO-JT-4tz">
+                    <navigationItem key="navigationItem" title="时间线" id="ADO-JT-4tz">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="obp-tE-BSI">
                             <connections>
                                 <segue destination="mj6-9W-A5I" kind="presentation" id="mbb-ZO-PV9"/>

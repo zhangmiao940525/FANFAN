@@ -38,7 +38,7 @@
     
     NSData *data = UIImageJPEGRepresentation(_pickerImageView.image, 0.5);
    [[Service sharedInstance] postData:@"test" imageData:data replyToStatusID:nil repostStatusID:nil success:^(NSArray *result) {
-        NSLog(@"%@",result);
+        //NSLog(@"%@",result);
    } failure:^(NSError *error) {
        NSLog(@"%@",error.description);
    }];

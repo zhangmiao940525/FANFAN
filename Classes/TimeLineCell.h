@@ -32,6 +32,8 @@ typedef void(^DidSelectPhotoBlock)(TimeLineCell *cell);
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentLableHeight;
+
 @property (weak, nonatomic) IBOutlet CellToolbarView *toolbar;
 
 @property (weak, nonatomic) CellToolbarView *cellToolbar;

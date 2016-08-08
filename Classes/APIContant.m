@@ -30,3 +30,6 @@ NSString *const API_UPLOAD_PHOTO = @"/photos/upload.json";
 NSString *const API_FAVORITES_CREATE = @"/favorites/create/";
 // direct_messages/new.[json
 NSString *const API_CONVERSATION_LIST = @"/direct_messages/conversation_list.json";
+
+NSString *const API_CONVERSATION = @"/direct_messages/conversation.json";
+NSString *const API_MESSAGES_NEW = @"/direct_messages/new.json";

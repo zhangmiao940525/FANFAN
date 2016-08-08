@@ -22,8 +22,8 @@
 {
 	// we want to relayout the text if height or width change
 	self.relayoutMask = DTAttributedTextContentViewRelayoutOnHeightChanged | DTAttributedTextContentViewRelayoutOnWidthChanged;
-	
-	self.layoutFrameHeightIsConstrainedByBounds = YES; // height is not flexible
+	//
+	self.layoutFrameHeightIsConstrainedByBounds = NO; // height is not flexible
 }
 
 - (id)initWithFrame:(CGRect)frame

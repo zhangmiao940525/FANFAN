@@ -29,6 +29,7 @@
 }
 
 
+
 - (void)configureWithStatus:(Status *)status
 {
     
@@ -38,18 +39,18 @@
     
     self.dateCreatedLabel.text = [formatter stringFromDate:status.created_at];
     self.nameLabel.text = status.user.name;
-    //self.contentsLabel.text = status.text;
     
     NSData *data = [status.text dataUsingEncoding:NSUnicodeStringEncoding];
     NSDictionary *options = @{DTDefaultFontName: @"HelveticalNeue-Light",
                               DTDefaultFontSize: @16,
                               DTDefaultLinkColor: [UIColor blueColor]};
     
-    // options[DTDefaultFontName] = HelveticalNeue-Light;
-    
     NSAttributedString *attribStr = [[NSAttributedString alloc] initWithHTMLData:data options:options documentAttributes:nil];
     self.contentsLabel.attributedString = attribStr;
     self.contentsLabel.numberOfLines = 0;
+   
+    // 它是根据所加载的文字内容计算出高度和宽度
+     _contentLableHeight.constant = [self.contentsLabel intrinsicContentSize].height;
     
     NSURL *url = [NSURL URLWithString:status.user.iconURL];
     // SDWebImageRefreshCached 已经下载过一次的就不需要再下载了
@@ -60,7 +61,6 @@
         if (photoURL) {
             _imageHeightConstraint.constant = 200;
             
-//            [self.photoImageView sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"BackgroundImage"] options:SDWebImageRefreshCached];
             [self.photoImageView sd_setImageWithURL:photoURL placeholderImage:[UIImage imageNamed:@"BackgroundImage"] options:SDWebImageRefreshCached completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                 _imageHeightConstraint.constant = image.size.height;
             }];
@@ -72,9 +72,8 @@
     
     
     cellToolbar = [self createCellToolbar];
-    
+    // 关闭自动布局
     cellToolbar.translatesAutoresizingMaskIntoConstraints = NO;
-    cellToolbar.backgroundColor = [UIColor blueColor];
     [self.toolbar addSubview:cellToolbar];
     
     NSLayoutConstraint *top = [cellToolbar.topAnchor constraintEqualToAnchor:self.toolbar.topAnchor];

@@ -13,17 +13,6 @@
 
 @implementation UserTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (void)configureWithUser:(User *)user
 {
     self.nameLabel.text = user.name;
@@ -33,10 +22,19 @@
     [self.iconImageView sd_setImageWithURL:url placeholderImage:nil options:SDWebImageRefreshCached];
     
 }
+// 当你和别人会话时 可以作为发送者 也可以作为接收者
 
+/**
+ conversation.otherid  对话的人的id
+ */
 - (void)configureWithConversation:(Conversation *)conversation
 {
-    self.nameLabel.text = conversation.message.recipient_screen_name;
+    if ([conversation.otherid isEqualToString:conversation.message.sender_id]) {
+        self.nameLabel.text = conversation.message.sender_screen_name;
+    } else {
+        self.nameLabel.text = conversation.message.recipient_screen_name;
+    }
+    
     self.idLabel.text = conversation.otherid;
     
         NSURL *url = [NSURL URLWithString:conversation.message.recipient.iconURL];

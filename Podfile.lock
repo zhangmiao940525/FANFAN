@@ -25,6 +25,9 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.10):
     - DTFoundation/Core
+  - JSQMessagesViewController (7.3.3):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - JTSImageViewController (1.5.1)
   - OMGHTTPURLRQ/UserAgent (3.1.2)
   - SDWebImage (3.8.1):
@@ -36,6 +39,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - DTCoreText
+  - JSQMessagesViewController
   - JTSImageViewController
   - SDWebImage
   - TDOAuth
@@ -44,11 +48,13 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   DTCoreText: 3ea8bba23dd2141ba18adb227a7dd33a822df1c4
   DTFoundation: 3b6b1b817d2a7fb02e7eaf2596c922a68145bd43
+  JSQMessagesViewController: 0ee3f80237268192a3e8337fd0d787f1a1bf5a7a
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
   OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   TDOAuth: f7e356e834295b83c7b5066ee72a30f128c5f722
 
-PODFILE CHECKSUM: 4303ce5281e727ec5286f28b62c052da14ccd8eb
+PODFILE CHECKSUM: a302347d7b43593e6e4d20d9dbf11f35691e02ef
 
 COCOAPODS: 1.0.1

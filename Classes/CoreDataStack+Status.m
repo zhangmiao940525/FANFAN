@@ -34,7 +34,7 @@ static NSString *const PHOTO_ENTITY = @"Photo";
     return nil;
 }
 
-- (Status *)insertOrUpdateWithStatusProfile:(NSDictionary *)statusProfile
+- (Status *)insertOrUpdateWithStatusProfile:(id)statusProfile
 {
     // 取出微博 字典id
     Status *status = [self checkImportedWithStatusID:statusProfile[@"id"]];

@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *idLabel;
 
 - (void)configureWithUser:(User *)user;
+
 - (void)configureWithConversation:(Conversation *)conversation;
 
 @end

@@ -36,6 +36,7 @@
 		059D02891D49F7AC00826602 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02871D49F7AC00826602 /* Status.m */; };
 		059D02901D4B20DE00826602 /* CoreDataStack+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D028F1D4B20DE00826602 /* CoreDataStack+Status.m */; };
 		059D02931D4B321B00826602 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02921D4B321B00826602 /* TimeLineTableViewController.m */; };
+		059F00ED1D5861F200C1A61C /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059F00EC1D5861F200C1A61C /* MessageViewController.m */; };
 		05ACB8961D4F199C00336AFE /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB8931D4F199C00336AFE /* Photo+CoreDataProperties.m */; };
 		05ACB8971D4F199C00336AFE /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB8951D4F199C00336AFE /* Photo.m */; };
 		05ACB8991D4F1A7600336AFE /* MappingModel.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB8981D4F1A7600336AFE /* MappingModel.xcmappingmodel */; };
@@ -53,7 +54,6 @@
 		05F3F6921D4602710041BA25 /* Spliash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6801D4602710041BA25 /* Spliash.storyboard */; };
 		05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6821D4602710041BA25 /* SpliashViewController.m */; };
 		05F3F6941D4602710041BA25 /* TimeLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F3F6831D4602710041BA25 /* TimeLine.storyboard */; };
-		05F3F6951D4602710041BA25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3F6851D4602710041BA25 /* ViewController.m */; };
 		05F94EF11D51BC2C00C12E9F /* Compose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F94EF01D51BC2C00C12E9F /* Compose.storyboard */; };
 		05F94EF41D51BC4000C12E9F /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F94EF31D51BC4000C12E9F /* ComposeViewController.m */; };
 		5B185E0CC293F9F6F3D2DF27 /* libPods-Fanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03062B0BFEB36FD9D343725 /* libPods-Fanner.a */; };
@@ -116,6 +116,8 @@
 		059D028F1D4B20DE00826602 /* CoreDataStack+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataStack+Status.m"; sourceTree = "<group>"; };
 		059D02911D4B321B00826602 /* TimeLineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewController.h; sourceTree = "<group>"; };
 		059D02921D4B321B00826602 /* TimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewController.m; sourceTree = "<group>"; };
+		059F00EB1D5861F200C1A61C /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		059F00EC1D5861F200C1A61C /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		05ACB8911D4F173000336AFE /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
 		05ACB8921D4F199C00336AFE /* Photo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+CoreDataProperties.h"; sourceTree = "<group>"; };
 		05ACB8931D4F199C00336AFE /* Photo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -140,8 +142,6 @@
 		05F3F6811D4602710041BA25 /* SpliashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpliashViewController.h; sourceTree = "<group>"; };
 		05F3F6821D4602710041BA25 /* SpliashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpliashViewController.m; sourceTree = "<group>"; };
 		05F3F6831D4602710041BA25 /* TimeLine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeLine.storyboard; sourceTree = "<group>"; };
-		05F3F6841D4602710041BA25 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05F3F6851D4602710041BA25 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		05F94EF01D51BC2C00C12E9F /* Compose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Compose.storyboard; sourceTree = "<group>"; };
 		05F94EF21D51BC4000C12E9F /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
 		05F94EF31D51BC4000C12E9F /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
@@ -168,7 +168,6 @@
 				052952001D46038700110C7B /* Podfile */,
 				05F3F66F1D4602710041BA25 /* Classes */,
 				050A17731D45D99F00A3BFDF /* Products */,
-				05ACB8A01D4F303400336AFE /* Other */,
 				455605033DEB731CE5FC6F54 /* Pods */,
 				D98D65A9986CE944BED435BE /* Frameworks */,
 			);
@@ -195,6 +194,8 @@
 		0520E2D61D5463FC00EEC916 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				059F00EB1D5861F200C1A61C /* MessageViewController.h */,
+				059F00EC1D5861F200C1A61C /* MessageViewController.m */,
 				0520E2E21D547C4200EEC916 /* ConversationListViewController.h */,
 				0520E2E31D547C4200EEC916 /* ConversationListViewController.m */,
 			);
@@ -380,15 +381,12 @@
 		05ACB8A01D4F303400336AFE /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				05F3F6841D4602710041BA25 /* ViewController.h */,
-				05F3F6851D4602710041BA25 /* ViewController.m */,
 				05CCDCCB1D4604BB00C8578B /* Info.plist */,
 				05F3F67C1D4602710041BA25 /* main.m */,
 				05F3F6711D4602710041BA25 /* AppDelegate.h */,
 				05F3F6721D4602710041BA25 /* AppDelegate.m */,
 			);
 			name = Other;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		05ACB8A11D4F303F00336AFE /* Main */ = {
@@ -432,6 +430,7 @@
 				05ACB8A11D4F303F00336AFE /* Main */,
 				05F94EEF1D51BC0F00C12E9F /* Compose */,
 				059D027E1D49ED2C00826602 /* TimeLine */,
+				05ACB8A01D4F303400336AFE /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -625,6 +624,7 @@
 				05ACB8991D4F1A7600336AFE /* MappingModel.xcmappingmodel in Sources */,
 				0520E2CB1D545CE600EEC916 /* Message+CoreDataProperties.m in Sources */,
 				05F94EF41D51BC4000C12E9F /* ComposeViewController.m in Sources */,
+				059F00ED1D5861F200C1A61C /* MessageViewController.m in Sources */,
 				05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */,
 				05ACB8961D4F199C00336AFE /* Photo+CoreDataProperties.m in Sources */,
 				0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */,
@@ -651,7 +651,6 @@
 				0549D3111D487E0600E9F379 /* APIContant.m in Sources */,
 				0520E2D51D5463F000EEC916 /* CoreDataStack+Message.m in Sources */,
 				0520E2CA1D545CE600EEC916 /* Conversation.m in Sources */,
-				05F3F6951D4602710041BA25 /* ViewController.m in Sources */,
 				0549D3141D489EAD00E9F379 /* CoreDataTableViewController.m in Sources */,
 				0520E2CC1D545CE600EEC916 /* Message.m in Sources */,
 			);
@@ -717,6 +716,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -755,6 +755,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

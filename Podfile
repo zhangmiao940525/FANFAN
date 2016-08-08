@@ -8,4 +8,5 @@ target 'Fanner' do
     pod 'SDWebImage'
     pod 'JTSImageViewController'
     pod 'DTCoreText'
+    pod 'JSQMessagesViewController'
 end

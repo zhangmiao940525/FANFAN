@@ -60,7 +60,6 @@
 #pragma mark - UITableView代理
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%s",__func__);
     User *user = [self.frc objectAtIndexPath:indexPath];
     user.isActive = @YES;
 }

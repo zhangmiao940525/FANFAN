@@ -26,7 +26,7 @@
         [self configureFetch];
         // 执行
         [self performFetch];
-        NSLog(@"result = %@", result);
+        //NSLog(@"result = %@", result);
     } failure:^(NSError *error) {
         
     }];
@@ -51,7 +51,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserCell"];
+    UserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConversationCell"];
     
     Conversation *conversation = [self.frc objectAtIndexPath:indexPath];
     
@@ -60,6 +60,9 @@
     return cell;
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90;
+}
 
 @end

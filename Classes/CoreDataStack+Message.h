@@ -12,5 +12,7 @@
 @interface CoreDataStack (Message)
 
 - (Message *)insertOrUpdateMessageProfile:(NSDictionary *)profile;
-
+- (void)addMessagesWitArray:(NSArray *)array;
+// 从数据库查询所有的绘画msgs模型
+- (NSArray *)fetchMessagesWithUserID:(NSString *)userID;
 @end

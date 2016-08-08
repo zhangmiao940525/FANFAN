@@ -12,7 +12,7 @@
 @interface CoreDataStack (Status)
 
 //
-- (Status *)insertOrUpdateWithStatusProfile:(NSDictionary *)statusProfile;
+- (Status *)insertOrUpdateWithStatusProfile:(id)statusProfile;
 //
 - (void)insertStatusWithArrayProfile:(NSArray *)arrayProfile;
 

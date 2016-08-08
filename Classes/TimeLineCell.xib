@@ -28,7 +28,7 @@
                             <constraint firstAttribute="height" constant="21" id="C5W-bA-tsa"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publishtime from iphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwy-yo-cez">
@@ -39,7 +39,7 @@
                     </label>
                     <view contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-1Y-TNo" customClass="DTAttributedLabel">
                         <rect key="frame" x="8" y="73" width="297" height="106.5"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="0ZF-ul-NWC"/>
                         </constraints>
@@ -54,7 +54,7 @@
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6Y-21-NaU" customClass="CellToolbarView">
                         <rect key="frame" x="8" y="389.5" width="297" height="30"/>
-                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="dRD-gw-qMw"/>
                         </constraints>
@@ -104,6 +104,7 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="contentLableHeight" destination="0ZF-ul-NWC" id="XO2-9x-hYN"/>
                 <outlet property="contentsLabel" destination="Epe-1Y-TNo" id="qCM-ky-3f6"/>
                 <outlet property="dateCreatedLabel" destination="Wwy-yo-cez" id="Liy-dh-BhN"/>
                 <outlet property="iconImageView" destination="tOn-WW-UDE" id="Bnd-GY-GcE"/>

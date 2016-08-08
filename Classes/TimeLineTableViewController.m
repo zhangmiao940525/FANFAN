@@ -169,7 +169,7 @@
     // 请求收藏接口
     [[Service sharedInstance] starWithStatusID:status.sid success:^(NSArray *result) {
         
-        NSLog(@"result = %@", result);
+      //  NSLog(@"result = %@", result);
         [[CoreDataStack sharedCoreDataStack] insertOrUpdateWithStatusProfile:result];
         
         [toolbar setupStarButtonWithBOOL:status.favorited.boolValue];

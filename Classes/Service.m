@@ -14,10 +14,8 @@
 #import "Service.h"
 #import <TDOAuth.h>
 #import "APIContant.h"
-#import "CoreDataStack.h"
 #import "CoreDataStack+User.h"
-#import "APIContant.h"
-#import "User+CoreDataProperties.h"
+#import "User.h"
 
 @interface Service ()
 
@@ -57,7 +55,6 @@
 // 登录验证 最终目的是获取到access_token 和 access_secret
 - (void)authoriseWithUserName:(NSString *)userName password:(NSString *)password success:(void(^)(NSString *token, NSString *tokenSecret))success
 {
-    
     NSURLRequest *request = [TDOAuth URLRequestForPath:API_ACCESS_TOKEN
                                          GETParameters:[NSDictionary dictionaryWithObjectsAndKeys:
                                                         userName, @"x_auth_username",
@@ -73,16 +70,16 @@
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        //NSLog(@"%@",str);
+       
         NSArray *sp1 = [str componentsSeparatedByString:@"="];
-        //NSLog(@"sp1 = %@", sp1);
+        
         NSString *tokenSecret = sp1[2];
         //NSLog(@"tokenSecret = %@", tokenSecret);
         NSString *ele1 = sp1[1];
-        //NSLog(@"ele1 = %@", ele1);
+        
         
         NSArray *sp2 = [ele1 componentsSeparatedByString:@"&"];
-        //NSLog(@"sp2 = %@", sp2);
+        
         NSString *token = sp2[0];
         //NSLog(@"token = %@", token);
         
@@ -128,7 +125,7 @@
             NSLog(@"%@",error.description);
         } else {
             NSArray *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-             NSLog(@"%@",result);
+          //   NSLog(@"%@",result);
             
             success(result);
         }
@@ -177,8 +174,8 @@
             failure(error);
         } else {
             NSArray *result =  [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-            NSLog(@"%@",result);
-            
+         //   NSLog(@"%@",result);
+         
             dispatch_async(dispatch_get_main_queue(), ^{
                 sucess(result);
                 
@@ -259,7 +256,7 @@
 
 
 #pragma mark - 收藏
-- (void)starWithStatusID:(NSString *)statusID success:(void(^)(NSArray *result))success failure:(void(^)(NSError *error))failure
+- (void)starWithStatusID:(NSString *)statusID success:(void(^)(id  result))success failure:(void(^)(NSError *error))failure
 {
     NSString *path = [NSString stringWithFormat:@"%@:%@.json",API_FAVORITES_CREATE,statusID];
     [self requestWithPath:path parameters:nil requestMethod:@"POST" success:success failure:failure];

@@ -30,3 +30,7 @@ extern NSString *const API_UPLOAD_PHOTO;
 extern NSString *const API_FAVORITES_CREATE;
 
 extern NSString *const API_CONVERSATION_LIST;
+
+extern NSString *const API_CONVERSATION;
+
+extern NSString *const API_MESSAGES_NEW;
