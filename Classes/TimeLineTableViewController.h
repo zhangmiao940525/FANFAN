@@ -8,9 +8,8 @@
 
 #import "CoreDataTableViewController.h"
 #import "CellToolbarView.h"
+#import <ARSegmentPager/ARSegmentPageController.h>
 
-@interface TimeLineTableViewController : CoreDataTableViewController<NSFetchedResultsControllerDelegate,CellToolbarDelegate>
-
-
+@interface TimeLineTableViewController : CoreDataTableViewController<ARSegmentControllerDelegate,CellToolbarDelegate>
 
 @end

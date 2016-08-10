@@ -91,6 +91,9 @@ static NSString *const PHOTO_ENTITY = @"Photo";
         
         
     }];
+    
+    // 保存到数据库
+    [self saveContext];
 }
 
 - (NSFetchRequest *)photoFetchRequest

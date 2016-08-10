@@ -54,6 +54,9 @@
     msg.sender = senderPro;
     msg.recipient = recipientPro;
     
+    // 保存到数据库
+    [self saveContext];
+    
     return msg;
 }
 

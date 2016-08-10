@@ -20,7 +20,8 @@
 - (void)configureFetch
 {
     NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:@"User"];
-    
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"token != nil"];
+    fr.predicate = pre;
     NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     
     NSArray *descriptors = @[descriptor];

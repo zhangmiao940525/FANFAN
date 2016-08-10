@@ -15,5 +15,6 @@
 @property (nonatomic,strong)User *currentUser;
 
 - (User *)insertOrUpdateWithUserProfile:(NSDictionary *)userProfile token:(NSString *)token tokenSecret:(NSString *)tokenSecret;
-
+// 根据用户ID查找用户数据
+- (User *)findUserWithId:(NSString *)uid;
 @end

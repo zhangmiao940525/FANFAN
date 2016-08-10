@@ -7,7 +7,9 @@
 //
 
 #import "SpliashViewController.h"
-
+#import "User.h"
+//#import "CoreDataStack.h"
+#import "CoreDataStack+User.h"
 @interface SpliashViewController ()
 
 @end
@@ -18,18 +20,16 @@
     [super viewDidLoad];
     //
     dispatch_async(dispatch_get_main_queue(), ^{
-        
-        BOOL isUserExist = NO;
-        if (isUserExist) {
+        //  根据数据库是否有用户做判断
+        User *user = [CoreDataStack sharedCoreDataStack].currentUser;
+        NSLog(@"%@", user);
+
+        if (user) {
             [self performSegueWithIdentifier:@"MainSegue" sender:nil];
         } else {
             [self performSegueWithIdentifier:@"LoginSegue" sender:nil];
         }
-        
-        
     });
-    
-    
 }
 
 @end

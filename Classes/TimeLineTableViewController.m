@@ -17,7 +17,7 @@
 #import <SDImageCache.h>
 #import "CellToolbarView.h"
 
-@interface TimeLineTableViewController ()<JTSImageViewControllerInteractionsDelegate>
+@interface TimeLineTableViewController ()<JTSImageViewControllerInteractionsDelegate,NSFetchedResultsControllerDelegate>
 
 @end
 
@@ -178,6 +178,11 @@
         NSLog(@"error = %@", error);
     }];
     
+}
+
+#pragma mark - <ARSegmentControllerDelegate>
+- (NSString *)segmentTitle {
+    return @"时间线";
 }
 
 

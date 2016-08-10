@@ -47,6 +47,9 @@
     // 建立关系
     conversation.message = msg;
     
+    // 保存到数据库
+    [self saveContext];
+    
     return conversation;
     
 }

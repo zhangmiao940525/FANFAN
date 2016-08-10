@@ -33,9 +33,10 @@
 - (void)requestData {
     
     [[Service sharedInstance] getPhotosUserTimelineWithUserID:_userID sucess:^(id result) {
-        [[CoreDataStack sharedCoreDataStack] insertOrUpdateWithStatusProfile:result];
+        [[CoreDataStack sharedCoreDataStack] insertStatusWithArrayProfile:result];
         [self configureFetch];
         [self performFetch];
+        NSLog(@"self = %@", self);
         
     } failure:^(NSError *error) {
         

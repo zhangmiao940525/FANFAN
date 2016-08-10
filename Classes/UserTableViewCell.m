@@ -10,6 +10,7 @@
 #import "User.h"
 #import <UIImageView+WebCache.h>
 #import "Conversation.h"
+#import "CoreDataStack+User.h"
 
 @implementation UserTableViewCell
 
@@ -29,15 +30,17 @@
  */
 - (void)configureWithConversation:(Conversation *)conversation
 {
-    if ([conversation.otherid isEqualToString:conversation.message.sender_id]) {
-        self.nameLabel.text = conversation.message.sender_screen_name;
-    } else {
-        self.nameLabel.text = conversation.message.recipient_screen_name;
-    }
+//    if ([conversation.otherid isEqualToString:conversation.message.sender_id]) {
+//        self.nameLabel.text = conversation.message.sender_screen_name;
+//    } else {
+//        self.nameLabel.text = conversation.message.recipient_screen_name;
+//    }
     
+    User *user = [[CoreDataStack sharedCoreDataStack]findUserWithId:conversation.otherid];
     self.idLabel.text = conversation.otherid;
+    self.nameLabel.text = user.name;
     
-        NSURL *url = [NSURL URLWithString:conversation.message.recipient.iconURL];
+        NSURL *url = [NSURL URLWithString:user.iconURL];
         // SDWebImageRefreshCached 已经下载过一次的就不需要再下载了
         [self.iconImageView sd_setImageWithURL:url placeholderImage:nil options:SDWebImageRefreshCached];
     

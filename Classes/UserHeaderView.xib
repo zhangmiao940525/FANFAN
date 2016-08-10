@@ -9,42 +9,42 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserHeaderView">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="280"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZSZ-fB-9Dt">
-                    <rect key="frame" x="18" y="8" width="100" height="100"/>
+                    <rect key="frame" x="18" y="72" width="80" height="80"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="dx4-xm-tlw"/>
-                        <constraint firstAttribute="height" constant="100" id="kyX-JS-aw1"/>
+                        <constraint firstAttribute="width" constant="80" id="dx4-xm-tlw"/>
+                        <constraint firstAttribute="height" constant="80" id="kyX-JS-aw1"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNp-VL-5gK">
-                    <rect key="frame" x="18" y="116" width="43" height="21"/>
+                    <rect key="frame" x="18" y="160" width="43" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSp-Z1-mHN">
-                    <rect key="frame" x="18" y="145" width="14" height="21"/>
+                    <rect key="frame" x="18" y="189" width="14" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-xn-lCn">
-                    <rect key="frame" x="524" y="31" width="60" height="30"/>
+                    <rect key="frame" x="524" y="72" width="60" height="30"/>
                     <state key="normal" title="修改资料"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M58-f8-TdJ" userLabel="关注人数">
-                    <rect key="frame" x="18" y="194" width="54" height="30"/>
+                    <rect key="frame" x="18" y="228" width="54" height="30"/>
                     <state key="normal" title="follower"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lA-wc-Wek" userLabel="粉丝">
-                    <rect key="frame" x="87" y="194" width="46" height="30"/>
+                    <rect key="frame" x="87" y="228" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVN-iE-u3r" userLabel="发饭数量">
-                    <rect key="frame" x="148" y="194" width="46" height="30"/>
+                    <rect key="frame" x="148" y="228" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
             </subviews>
@@ -55,15 +55,15 @@
                 <constraint firstItem="GNp-VL-5gK" firstAttribute="leading" secondItem="ZSZ-fB-9Dt" secondAttribute="leading" id="N64-ub-pKc"/>
                 <constraint firstItem="vVN-iE-u3r" firstAttribute="top" secondItem="M58-f8-TdJ" secondAttribute="top" id="Nr9-Be-vuS"/>
                 <constraint firstItem="GNp-VL-5gK" firstAttribute="top" secondItem="ZSZ-fB-9Dt" secondAttribute="bottom" constant="8" id="Ogq-2b-WLO"/>
-                <constraint firstItem="ZSZ-fB-9Dt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="P6o-GL-FOR"/>
+                <constraint firstItem="ZSZ-fB-9Dt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="64" id="P6o-GL-FOR"/>
                 <constraint firstItem="8lA-wc-Wek" firstAttribute="leading" secondItem="M58-f8-TdJ" secondAttribute="trailing" constant="15" id="RUD-CU-daK"/>
                 <constraint firstItem="ZSZ-fB-9Dt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="10" id="SLf-30-SVg"/>
                 <constraint firstItem="lSp-Z1-mHN" firstAttribute="top" secondItem="GNp-VL-5gK" secondAttribute="bottom" constant="8" id="iiK-ms-1ie"/>
                 <constraint firstItem="vVN-iE-u3r" firstAttribute="leading" secondItem="8lA-wc-Wek" secondAttribute="trailing" constant="15" id="jog-gy-G3M"/>
-                <constraint firstItem="2tR-xn-lCn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="23" id="kM5-rH-66A"/>
+                <constraint firstItem="2tR-xn-lCn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="64" id="kM5-rH-66A"/>
                 <constraint firstAttribute="trailingMargin" secondItem="2tR-xn-lCn" secondAttribute="trailing" constant="8" id="ps0-AD-MmT"/>
                 <constraint firstItem="8lA-wc-Wek" firstAttribute="top" secondItem="M58-f8-TdJ" secondAttribute="top" id="uhy-hU-vCQ"/>
-                <constraint firstItem="M58-f8-TdJ" firstAttribute="top" secondItem="lSp-Z1-mHN" secondAttribute="bottom" constant="28" id="unA-zZ-a2f"/>
+                <constraint firstItem="M58-f8-TdJ" firstAttribute="top" secondItem="lSp-Z1-mHN" secondAttribute="bottom" constant="18" id="unA-zZ-a2f"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -75,7 +75,7 @@
                 <outlet property="nameLabel" destination="GNp-VL-5gK" id="LSo-da-vFb"/>
                 <outlet property="statusBtn" destination="vVN-iE-u3r" id="PYl-W5-53a"/>
             </connections>
-            <point key="canvasLocation" x="272" y="291"/>
+            <point key="canvasLocation" x="-28" y="225"/>
         </view>
     </objects>
 </document>

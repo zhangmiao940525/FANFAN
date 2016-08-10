@@ -79,8 +79,11 @@
     self.incomingBubble = [factory incomingMessagesBubbleImageWithColor:[UIColor jsq_messageBubbleGreenColor]];
     //
     [self addTimer];
+    
+    self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
+    self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
     //
-  //  [self refreshData];
+   [self refreshData];
 }
 
 #pragma mark - JSQMessagesCollectionViewDataSource
@@ -117,11 +120,11 @@
 {
     return;
 }
-
+// 返回的私信的内容
 - (id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView messageDataForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
     Message *msg = [_messages objectAtIndex:indexPath.item];
-    JSQMessage *jsm = [[JSQMessage alloc] initWithSenderId:msg.sender_id senderDisplayName:self.senderDisplayName date:msg.created_at text:msg.text];
+    JSQMessage *jsm = [[JSQMessage alloc] initWithSenderId:msg.sender.uid senderDisplayName:msg.sender.name date:msg.created_at text:msg.text];
     return jsm;
 }
 
@@ -139,7 +142,7 @@
 {
     // 判断是接受者还是发送者
     Message *msg = [_messages objectAtIndex:indexPath.item];
-    if ([msg.sender_id isEqualToString:_currentUser.uid]) {
+    if ([msg.sender.uid isEqualToString:_currentUser.uid]) {
         return self.outgoingBubble;
     } else {
         return self.incomingBubble;
