@@ -111,7 +111,7 @@
 #pragma mark - Base Request
 
 // 授权的时候要使用
-// 重构base request方法， 把和access_token有关的参数放到方法外部
+// 重构base1 request方法， 把和access_token有关的参数放到方法外部
 - (void)requestWithPath:(NSString *)path parameters:(NSDictionary *)parameters requestMethod:(NSString *)requestMethod success:(void (^)(NSArray *result))success failure:(void(^)(NSError *error))failure
 {
     User *user = [CoreDataStack sharedCoreDataStack].currentUser;
@@ -125,16 +125,19 @@
             NSLog(@"%@",error.description);
         } else {
             NSArray *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-          //   NSLog(@"%@",result);
+          
+           // 这里主要是Ui更新 所以一定要在主线程上
+            dispatch_async(dispatch_get_main_queue(), ^{
+                success(result);
+            });
             
-            success(result);
         }
     }];
     [task resume];
     
 }
 
-// 上传文本
+// base重构
 - (void)requestWithPath:(NSString *)path parameters:(NSDictionary *)parameters accessToken:(NSString *)accessToken tokenSecret:(NSString *)tokenSecret requestMethod:(NSString *)requestMethod success:(void (^)(NSArray *result))success failure:(void(^)(NSError *error))failure
 {
     NSURLRequest *request = [TDOAuth URLRequestForPath:path parameters:parameters host:FANFOU_API_HOST consumerKey:API_OAUTH_CONSUMER_KEY consumerSecret:API_OAUTH_CONSUMERSECRET accessToken:accessToken tokenSecret:tokenSecret scheme:@"http" requestMethod:requestMethod dataEncoding:TDOAuthContentTypeUrlEncodedForm headerValues:nil signatureMethod:TDOAuthSignatureMethodHmacSha1];
@@ -145,9 +148,10 @@
             failure(error);
         } else {
             NSArray *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-            // NSLog(@"%@",result);
-            
-            success(result);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                success(result);
+                
+            });
         }
     }];
     [task resume];

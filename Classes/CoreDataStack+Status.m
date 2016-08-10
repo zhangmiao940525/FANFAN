@@ -93,4 +93,14 @@ static NSString *const PHOTO_ENTITY = @"Photo";
     }];
 }
 
+- (NSFetchRequest *)photoFetchRequest
+{
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"photo.imageurl != nil"];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:NO];
+    NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:STATUS_ENTITY];
+    fr.predicate = pre;
+    fr.sortDescriptors = @[sortDescriptor];
+    return fr;
+}
+
 @end

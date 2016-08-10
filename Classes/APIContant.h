@@ -34,3 +34,5 @@ extern NSString *const API_CONVERSATION_LIST;
 extern NSString *const API_CONVERSATION;
 
 extern NSString *const API_MESSAGES_NEW;
+
+extern NSString *const API_PHOTOS_TIMELINE;

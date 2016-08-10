@@ -15,5 +15,5 @@
 - (Status *)insertOrUpdateWithStatusProfile:(id)statusProfile;
 //
 - (void)insertStatusWithArrayProfile:(NSArray *)arrayProfile;
-
+- (NSFetchRequest *)photoFetchRequest;
 @end

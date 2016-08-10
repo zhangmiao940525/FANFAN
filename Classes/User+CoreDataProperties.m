@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.m
 //  Fanner
 //
-//  Created by ZHANGMIA on 8/5/16.
+//  Created by ZHANGMIA on 8/9/16.
 //  Copyright © 2016 ZHANGMIA. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -19,6 +19,10 @@
 @dynamic token;
 @dynamic tokenSecret;
 @dynamic uid;
+@dynamic favourites_count;
+@dynamic followers_count;
+@dynamic friends_count;
+@dynamic statuses_count;
 @dynamic statuses;
 
 @end

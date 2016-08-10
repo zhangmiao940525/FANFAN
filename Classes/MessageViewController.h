@@ -11,7 +11,7 @@
 
 @interface MessageViewController : JSQMessagesViewController
 // 对应展示这个控制器的Conversation传进来的other_id
-@property (nonatomic,strong)NSString *userID;
+// @property (nonatomic,strong)NSString *userID;
 // 其实就是userID
 @property (nonatomic,strong)NSString *otherID;
 

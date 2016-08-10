@@ -28,6 +28,14 @@
 		0549D30E1D487AC900E9F379 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D30D1D487AC900E9F379 /* Service.m */; };
 		0549D3111D487E0600E9F379 /* APIContant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D3101D487E0600E9F379 /* APIContant.m */; };
 		0549D3141D489EAD00E9F379 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */; };
+		0550E1A81D59A85900298723 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550E1A71D59A85900298723 /* NSDate+Extension.m */; };
+		0550E1AD1D59C26F00298723 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0550E1AC1D59C26F00298723 /* UserHeaderView.xib */; };
+		0550E1B01D59C28200298723 /* UserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550E1AF1D59C28200298723 /* UserHeaderView.m */; };
+		0550E1B31D59CF7B00298723 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0550E1B21D59CF7B00298723 /* ProfileViewController.m */; };
+		058464EF1D5AC1AC00325BA5 /* PhotosCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 058464EE1D5AC1AC00325BA5 /* PhotosCollectionCell.m */; };
+		058464F11D5AC36400325BA5 /* PhotoBrowse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058464F01D5AC36400325BA5 /* PhotoBrowse.storyboard */; };
+		058464F41D5AC39900325BA5 /* PhotoBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058464F31D5AC39900325BA5 /* PhotoBrowseViewController.m */; };
+		058464F71D5AC6E800325BA5 /* Service+Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 058464F61D5AC6E800325BA5 /* Service+Photo.m */; };
 		059D027C1D49D89200826602 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02791D49D89200826602 /* User+CoreDataProperties.m */; };
 		059D027D1D49D89200826602 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D027B1D49D89200826602 /* User.m */; };
 		059D02821D49ED6900826602 /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D02801D49ED6900826602 /* TimeLineCell.m */; };
@@ -101,6 +109,20 @@
 		0549D3121D489EAD00E9F379 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		054C3B731D532DFE0083B269 /* Model 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 3.xcdatamodel"; sourceTree = "<group>"; };
+		0550E1A61D59A85900298723 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		0550E1A71D59A85900298723 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		0550E1AC1D59C26F00298723 /* UserHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
+		0550E1AE1D59C28200298723 /* UserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHeaderView.h; sourceTree = "<group>"; };
+		0550E1AF1D59C28200298723 /* UserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHeaderView.m; sourceTree = "<group>"; };
+		0550E1B11D59CF7B00298723 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		0550E1B21D59CF7B00298723 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		058464ED1D5AC1AC00325BA5 /* PhotosCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionCell.h; sourceTree = "<group>"; };
+		058464EE1D5AC1AC00325BA5 /* PhotosCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionCell.m; sourceTree = "<group>"; };
+		058464F01D5AC36400325BA5 /* PhotoBrowse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoBrowse.storyboard; sourceTree = "<group>"; };
+		058464F21D5AC39900325BA5 /* PhotoBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowseViewController.h; sourceTree = "<group>"; };
+		058464F31D5AC39900325BA5 /* PhotoBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowseViewController.m; sourceTree = "<group>"; };
+		058464F51D5AC6E800325BA5 /* Service+Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Service+Photo.h"; sourceTree = "<group>"; };
+		058464F61D5AC6E800325BA5 /* Service+Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Service+Photo.m"; sourceTree = "<group>"; };
 		059D02781D49D89200826602 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
 		059D02791D49D89200826602 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
 		059D027A1D49D89200826602 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -275,6 +297,8 @@
 				0520E2D11D54600500EEC916 /* EntityNameConstant.m */,
 				0520E2DF1D54788D00EEC916 /* Service+Conversation.h */,
 				0520E2E01D54788D00EEC916 /* Service+Conversation.m */,
+				058464F51D5AC6E800325BA5 /* Service+Photo.h */,
+				058464F61D5AC6E800325BA5 /* Service+Photo.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -286,6 +310,31 @@
 				0549D3131D489EAD00E9F379 /* CoreDataTableViewController.m */,
 			);
 			name = GenericTVController;
+			sourceTree = "<group>";
+		};
+		0550E1A91D59C22B00298723 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				05F3F67D1D4602710041BA25 /* Me.storyboard */,
+				0550E1AC1D59C26F00298723 /* UserHeaderView.xib */,
+				0550E1AE1D59C28200298723 /* UserHeaderView.h */,
+				0550E1AF1D59C28200298723 /* UserHeaderView.m */,
+				0550E1B11D59CF7B00298723 /* ProfileViewController.h */,
+				0550E1B21D59CF7B00298723 /* ProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		058464EC1D5ABB0400325BA5 /* PhotoBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				058464ED1D5AC1AC00325BA5 /* PhotosCollectionCell.h */,
+				058464EE1D5AC1AC00325BA5 /* PhotosCollectionCell.m */,
+				058464F01D5AC36400325BA5 /* PhotoBrowse.storyboard */,
+				058464F21D5AC39900325BA5 /* PhotoBrowseViewController.h */,
+				058464F31D5AC39900325BA5 /* PhotoBrowseViewController.m */,
+			);
+			name = PhotoBrowse;
 			sourceTree = "<group>";
 		};
 		059D027E1D49ED2C00826602 /* TimeLine */ = {
@@ -410,7 +459,6 @@
 		05ACB8A31D4F308700336AFE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				05F3F67D1D4602710041BA25 /* Me.storyboard */,
 				05F3F67E1D4602710041BA25 /* MentionMe.storyboard */,
 				05F3F6801D4602710041BA25 /* Spliash.storyboard */,
 				05F3F6741D4602710041BA25 /* LaunchScreen.storyboard */,
@@ -422,15 +470,19 @@
 		05F3F66F1D4602710041BA25 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				058464EC1D5ABB0400325BA5 /* PhotoBrowse */,
+				0550E1A91D59C22B00298723 /* Profile */,
 				0520E2C01D545ADF00EEC916 /* Message */,
 				05ACB89D1D4F2F6B00336AFE /* OAuth */,
 				0542751F1D47452100115E25 /* CoreData */,
 				0542751B1D473D1500115E25 /* Login */,
-				05F3F6731D4602710041BA25 /* Assets.xcassets */,
 				05ACB8A11D4F303F00336AFE /* Main */,
 				05F94EEF1D51BC0F00C12E9F /* Compose */,
 				059D027E1D49ED2C00826602 /* TimeLine */,
 				05ACB8A01D4F303400336AFE /* Other */,
+				0550E1A61D59A85900298723 /* NSDate+Extension.h */,
+				0550E1A71D59A85900298723 /* NSDate+Extension.m */,
+				05F3F6731D4602710041BA25 /* Assets.xcassets */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -546,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0550E1AD1D59C26F00298723 /* UserHeaderView.xib in Resources */,
 				059D02831D49ED6900826602 /* TimeLineCell.xib in Resources */,
 				05F3F6891D4602710041BA25 /* LaunchScreen.storyboard in Resources */,
 				05F3F6921D4602710041BA25 /* Spliash.storyboard in Resources */,
@@ -554,6 +607,7 @@
 				05F94EF11D51BC2C00C12E9F /* Compose.storyboard in Resources */,
 				05F3F6861D4602710041BA25 /* Account.storyboard in Resources */,
 				05F3F6911D4602710041BA25 /* Message.storyboard in Resources */,
+				058464F11D5AC36400325BA5 /* PhotoBrowse.storyboard in Resources */,
 				052952011D46038700110C7B /* Podfile in Resources */,
 				05F3F68F1D4602710041BA25 /* Me.storyboard in Resources */,
 				052965341D508E7C00A009A8 /* CellToolbarView.xib in Resources */,
@@ -626,6 +680,9 @@
 				05F94EF41D51BC4000C12E9F /* ComposeViewController.m in Sources */,
 				059F00ED1D5861F200C1A61C /* MessageViewController.m in Sources */,
 				05F3F68D1D4602710041BA25 /* LoginViewController.m in Sources */,
+				0550E1A81D59A85900298723 /* NSDate+Extension.m in Sources */,
+				058464F41D5AC39900325BA5 /* PhotoBrowseViewController.m in Sources */,
+				0550E1B01D59C28200298723 /* UserHeaderView.m in Sources */,
 				05ACB8961D4F199C00336AFE /* Photo+CoreDataProperties.m in Sources */,
 				0542752F1D4755FA00115E25 /* CoreDataStack+User.m in Sources */,
 				0549D30E1D487AC900E9F379 /* Service.m in Sources */,
@@ -638,8 +695,10 @@
 				05F3F6931D4602710041BA25 /* SpliashViewController.m in Sources */,
 				0520E2D21D54600500EEC916 /* EntityNameConstant.m in Sources */,
 				059D027D1D49D89200826602 /* User.m in Sources */,
+				0550E1B31D59CF7B00298723 /* ProfileViewController.m in Sources */,
 				059D02891D49F7AC00826602 /* Status.m in Sources */,
 				0542751A1D473D0700115E25 /* UserTableViewCell.m in Sources */,
+				058464F71D5AC6E800325BA5 /* Service+Photo.m in Sources */,
 				054275221D47454300115E25 /* CoreDataStack.m in Sources */,
 				05F3F68E1D4602710041BA25 /* main.m in Sources */,
 				0520E2E11D54788D00EEC916 /* Service+Conversation.m in Sources */,
@@ -650,6 +709,7 @@
 				0542751E1D47438B00115E25 /* AccountTableViewController.m in Sources */,
 				0549D3111D487E0600E9F379 /* APIContant.m in Sources */,
 				0520E2D51D5463F000EEC916 /* CoreDataStack+Message.m in Sources */,
+				058464EF1D5AC1AC00325BA5 /* PhotosCollectionCell.m in Sources */,
 				0520E2CA1D545CE600EEC916 /* Conversation.m in Sources */,
 				0549D3141D489EAD00E9F379 /* CoreDataTableViewController.m in Sources */,
 				0520E2CC1D545CE600EEC916 /* Message.m in Sources */,

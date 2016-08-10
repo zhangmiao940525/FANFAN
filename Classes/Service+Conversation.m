@@ -21,5 +21,13 @@
     NSDictionary *params = @{@"id":userID};
     [self requestWithPath:API_CONVERSATION parameters:params requestMethod:@"GET" success:success failure:failure];
 }
+// 发送消息的请求
+- (void)postMessageWithUserID:(NSString *)userID text:(NSString *)text sucess:(void(^)(id result))success inReplyID:(NSString *)inReplyID failure:(void(^)(NSError *error))failure
+{
+    NSDictionary *params = @{@"user":userID, @"text":text, @"in_reply_to_id":inReplyID};
+    NSLog(@"pf = %@", params);
+    // 调用baserequest
+    [self requestWithPath:API_MESSAGES_NEW parameters:params requestMethod:@"POST" success:success failure:failure];
+}
 
 @end

@@ -15,7 +15,7 @@
 {
     NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:entityName];
     //
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K = %@",key, @YES];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K = %@",key, value];
     fr.predicate = predicate;
     // 执行查询
     NSError *error;

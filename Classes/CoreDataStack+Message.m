@@ -73,7 +73,7 @@
 - (NSArray *)fetchMessagesWithUserID:(NSString *)userID
 {
     // 1.创建一个NSFetchRequest 查询请求
-    NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:CONVERSATION_ENTITY];
+    NSFetchRequest *fr = [[NSFetchRequest alloc] initWithEntityName:MESSAGE_ENTITY];
     // 2.创建NSPredicate 查询条件
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"sender_id = %@ OR  recipient_id = %@", userID, userID];
     fr.predicate = pre;
